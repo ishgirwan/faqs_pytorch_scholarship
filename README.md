@@ -1,1 +1,1 @@
-# dlfaqs_udacity
+# dl_faqs_udacity
