@@ -1,1 +1,2 @@
-# dl_faqs_udacity
+# FAQs
+FAQs asked in Slack channel of PyTorch Scholarship Challenge.
