@@ -1,2 +1,2 @@
 # FAQs
-FAQs asked in Slack channel of PyTorch Scholarship Challenge.
+FAQs in Slack channel of Udacity's PyTorch Scholarship Challenge.
