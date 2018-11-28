@@ -1,32 +1,33 @@
+# Introduction to PyTorch
 
-**What is the use of Transfrom in dataloader?**
+**Q: What is the use of Transfrom in dataloader?**
 
 Resource:
 - https://pytorch.org/docs/stable/torchvision/transforms.html
 
-**Why I'm getting this error: `AttributeError: module 'helper' has no attribute 'view_classify'`**
+**Q: Why I'm getting this error: `AttributeError: module 'helper' has no attribute 'view_classify'`**
 
 You need to get helper.py file in your repository. You can get this file using following methods:
 
 - !wget -c https://raw.githubusercontent.com/udacity/deep-learning-v2-pytorch/master/intro-to-pytorch/helper.py
 - Download helper.py file from the github repo https://github.com/udacity/deep-learning-v2-pytorch/tree/master/intro-to-pytorch
 
-**What is the difference between: Output = model(images) and Output = model.forward(images)**
+**Q: What is the difference between: Output = model(images) and Output = model.forward(images)**
 
 The difference is that all the hooks are dispatched in the __call__ function, so if you call .forward and have hooks in your model, the hooks won’t have any effect. Check this discussion: https://discuss.pytorch.org/t/any-different-between-model-input-and-model-forward-input/3690
 
-**I need help regarding transfer learning using PyTorch**
+**Q: I need help regarding transfer learning using PyTorch**
 
 Resource:
 - https://pytorch.org/tutorials/beginner/transfer_learning_tutorial.html
 
-**We are taking the log_softmax in forward function, so why do you compute torch.exp(model(images))**
+**Q: We are taking the log_softmax in forward function, so why do you compute torch.exp(model(images))**
 
 Answered by @e0lithic
 >We already had probabilities from the softmax on top of which we used a log function to undo the log operation and get back the probabilities.
 `exp(log(softmax)) = softmax` So, as soon as your took the softmax you got the probabilities. But we took logsoftmax , so that we could get better optmization using the error function, which was needed for backprop.But for making predictions we only needed the probabilities. Since, our networks output layer was outputting log(softmax), while we needed simply the softmax( the probablities), hence we used exp(log(softmax)) = probablities.
 
-**Could anyone tell me what is `Top-1 error` and `Top-5 error` of pre-trained networks in torchvision.models?**
+**Q: Could anyone tell me what is `Top-1 error` and `Top-5 error` of pre-trained networks in torchvision.models?**
 
 Answered by @Sushil
 
@@ -40,13 +41,13 @@ Suppose your classifier gives you a probability for each class. Lets say we had 
 Hence, in a classification problem with k possible classes, every classifier has 100% top-k accuracy. The "normal" accuracy is top-1.
 
 
-**What is the difference between model.fc1.weight and model.fc1.weight.data?**
+**Q: What is the difference between model.fc1.weight and model.fc1.weight.data?**
 
 Answered by @mhendri
 
 >Both are actual weight. the difference is the data type, `fc1.weight` is an instance of `Parameter` where `fc1.weight.data` is a `Tensor`. `Parameter` is subtype/subclass of `Tensor`.
 
-**Why have we used 256 hidden units**
+**Q: Why have we used 256 hidden units**
 
 Answered by @sundeep
 
@@ -55,7 +56,7 @@ Answered by @sundeep
 Resource:
 - https://stats.stackexchange.com/questions/181/how-to-choose-the-number-of-hidden-layers-and-nodes-in-a-feedforward-neural-netw
 
-**How do we determine the number of hidden layers?**
+**Q: How do we determine the number of hidden layers?**
 
 Resource:
 - https://stackoverflow.com/questions/10565868/multi-layer-perceptron-mlp-architecture-criteria-for-choosing-number-of-hidde
