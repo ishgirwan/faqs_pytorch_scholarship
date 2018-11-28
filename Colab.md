@@ -24,4 +24,9 @@ Resource:
 
 Execute `!pip install Pillow==4.1.1` and restart your notebook.
 
+**In colab is it necessary to write the lines related to cuda?**
+
+Yes.
+
+
 
