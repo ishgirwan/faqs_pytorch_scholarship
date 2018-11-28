@@ -1,18 +1,19 @@
+# LAB
 
-**What are the tips and tricks that could be helpful in the Lab challenge**
+**Q:What are the tips and tricks that could be helpful in the Lab challenge**
 
 Here are some created by @mhendri:
 -https://docs.google.com/document/d/1-MCDPOejsn2hq9EoBzMpzGv9jEdtMWoIwjkAa1cVbSM/edit#heading=h.nj23sjpj5u97
 
-**After submission of the Final Project will there be a second chance if I don’t pass?**
+**Q:After submission of the Final Project will there be a second chance if I don’t pass?**
 
 You can submit as many times as you like. Only the best result would be considered for your final score.
 
-**I got this error: `"RuntimeError: cuda runtime error (2) : out of memory`**
+**Q:I got this error: `"RuntimeError: cuda runtime error (2) : out of memory`**
 
 Decrease your batch size.
 
-**Will I have to save my model in CPU instead of GPU to load it properly?**
+**Q:Will I have to save my model in CPU instead of GPU to load it properly?**
 
 Answered by @Vittorio Nardone
 
