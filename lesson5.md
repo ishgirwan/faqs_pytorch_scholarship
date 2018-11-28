@@ -11,7 +11,7 @@ Possible solutions:
 or 
 `conda install -c conda-forge opencv`
 
-**Getting this error: `Invalid argument 0: Sizes of tensors must match except in dimension 0. Got 499 and 442 in dimension 2 at...`**
+**Why am I getting this error: `Invalid argument 0: Sizes of tensors must match except in dimension 0. Got 499 and 442 in dimension 2 at...`**
 
 Possible solutions:
 
