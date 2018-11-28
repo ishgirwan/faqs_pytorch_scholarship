@@ -1,5 +1,6 @@
+# Recurrent Neural Networks
 
-**Please explain the significance of n_hidden in `nn.LSTM(input_size, n_hidden, n_layers, dropout=drop_prob, batch_first=True)`**
+**Q: Please explain the significance of n_hidden in `nn.LSTM(input_size, n_hidden, n_layers, dropout=drop_prob, batch_first=True)`**
 
 Answered by @José Fernández Portal:
 
