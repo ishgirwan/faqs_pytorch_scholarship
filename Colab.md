@@ -8,11 +8,9 @@ Mount the drive using:
 `from google.colab import drive
 drive.mount('/content/drive/')`
 
-Then:
+Clone the repo in your drive
 
 `%cd /content/drive/`
-
-To clone the repo in your drive
 
 !`git clone <github repo url>`
 
@@ -30,5 +28,14 @@ Execute `!pip install Pillow==4.1.1` and restart your notebook.
 
 Yes.
 
+**How can I get the cat-dog dataset?**
 
+Run the following commands:
 
+`!wget "https://s3.amazonaws.com/content.udacity-data.com/nd089/Cat_Dog_data.zip" -P "pytorch_challenge/transfer_learning"`
+
+`!unzip -qq -o "pytorch_challenge/transfer_learning/Cat_Dog_data.zip" -d "pytorch_challenge/transfer_learning"`
+
+`!ls "/content/pytorch_challenge/transfer_learning/Cat_Dog_data"`
+
+`data_dir = "/content/pytorch_challenge/transfer_learning/Cat_Dog_data"`
