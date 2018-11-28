@@ -42,5 +42,18 @@ Resources:
 
 -https://datascience.stackexchange.com/questions/23159/in-softmax-classifier-why-use-exp-function-to-do-normalization
 
+**Q: When and why is One-Hot-Encoding used?**
+
+Ressources: 
+
+-Quick answer: Used for multi-class-non-linear-classification. 
+Essentially the error function of a multi-class-classifier can be viewed as the sum of the errors of all the seperate classifieres (= potential classes). 
+That means I want the error of each data-example from each classifier. 
+Thats also means I need a given true output value for each datapoint for each classifier, meaning the given output point per data-example has to transformed from a scalar containing the number of the correct class to a vector whitch one entry for each classifier (potential class). 
+I.e.: if y1 = 3 and there would be 5 different possible classes it has to be converted to y1 = [0, 0, 1, 0, 0]; 
+
+-Additional Ressources: 
+https://towardsdatascience.com/smarter-ways-to-encode-categorical-data-for-machine-learning-part-1-of-3-6dca2f71b159
+
 
         
