@@ -21,6 +21,7 @@ Resource:
 
 
 **I am trying to run the codes on Colab but got `AttributeError: module 'PIL.Image' has no attribute 'register_decoder'`.**
+
 Execute `!pip install Pillow==4.1.1` and restart your notebook.
 
 
