@@ -14,6 +14,7 @@ Clone the repo in your drive
 
 !`git clone <github repo url>`
 
+
 **Q: How to use Colab**
 
 Resource:
@@ -24,11 +25,13 @@ Resource:
 
 Execute `!pip install Pillow==4.1.1` and restart your notebook.
 
+
 **Q: In colab is it necessary to write the lines related to cuda?**
 
 Yes.
 
-**How can I get the cat-dog dataset?**
+
+**Q: How can I get the cat-dog dataset?**
 
 Run the following commands:
 
