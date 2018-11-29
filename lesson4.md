@@ -9,7 +9,7 @@
 
   You need to get helper.py file in your repository. You can get this file using following methods:
 
--   !wget -c https://raw.githubusercontent.com/udacity/deep-learning-v2-pytorch/master/intro-to-pytorch/helper.py
+-   `!wget -c https://raw.githubusercontent.com/udacity/deep-learning-v2-pytorch/master/intro-to-pytorch/helper.py`
 -   Download helper.py file from the github repo https://github.com/udacity/deep-learning-v2-pytorch/tree/master/intro-to-pytorch
 
 **Q: What is the difference between: Output = model(images) and Output = model.forward(images)**
