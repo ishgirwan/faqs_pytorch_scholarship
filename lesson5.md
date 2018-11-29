@@ -4,23 +4,23 @@
 
 Resource:
 
--http://cs231n.github.io/convolutional-networks/#pool
+-  http://cs231n.github.io/convolutional-networks/#pool
 
 **Q: When trying to run the conv_visualization in my notebook, I'm getting the error `ModuleNotFoundError: No module named 'cv2'`**
 
 Possible solutions:
 
-`pip install opencv-python`
-or 
-`conda install -c conda-forge opencv`
+-  `pip install opencv-python`
+
+-  `conda install -c conda-forge opencv`
 
 **Q: Why am I getting this error: `Invalid argument 0: Sizes of tensors must match except in dimension 0. Got 499 and 442 in dimension 2 at...`**
 
 Possible solutions:
 
-`transforms.RandomCrop(224)`
-or
-`transforms.RandomResizedCrop(224)`
+-  `transforms.RandomCrop(224)`
+
+-  `transforms.RandomResizedCrop(224)`
 
 **Q: While using transforms.Normalize, we pass in al list of means and a list of standard deviation (std) to normalize the input color channels, how do we define means and std values and why it's 0.5 in some cases?**
 
