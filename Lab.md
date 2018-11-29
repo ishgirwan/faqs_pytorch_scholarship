@@ -8,17 +8,23 @@
 
 **Q: After submission of the Final Project will there be a second chance if I don’t pass?**
 
-  You can submit as many times as you like. Only the best result would be considered for your final score.
+  You can submit as many times as you like. The best result will be considered for your final score.
+
+**Q: Can I see my accuracy on the test set after passing?**
+
+No, there is no further information available.
 
 **Q: I got this error: `"RuntimeError: cuda runtime error (2) : out of memory`**
 
-  Decrease your batch size.
+  Restart your kernel and try decreasing your batch size and/or using a simpler model.
 
 **Q: Will I have to save my model in CPU instead of GPU to load it properly?**
 
   Answered by @Vittorio Nardone
 
   >If you have already saved model checkpoint from GPU, you can try this to load it in CPU env: checkpoint = torch.load(filename, map_location=lambda storage, loc: storage)
+  
+  Alternatively, you can put your model onto the CPU before saving by using model.cpu()
 
 **Q: Will I have to train my model on pytorch 0.4.0 to pass the test?**
 
