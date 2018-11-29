@@ -1,6 +1,8 @@
 # FAQs
 FAQs in Slack channel of Udacity's PyTorch Scholarship Challenge.
 
+[About the course](Aboutthecourse.md)
+
 [Lesson 2](lesson2.md)
 
 [Lesson 4](lesson4.md)
@@ -18,3 +20,5 @@ FAQs in Slack channel of Udacity's PyTorch Scholarship Challenge.
 [Google Colab](Colab.md)
 
 [Lab Challenge](Lab.md)
+
+[Miscellaneous](Miscellaneous.md)
