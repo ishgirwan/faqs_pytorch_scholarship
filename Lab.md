@@ -25,3 +25,6 @@
 No, if you train your model on a later version of pytorch then to pass you should include strict=False when loading the state_dict, i.e. 
 model.load_state_dict(checkpoint[‘state_dict’], strict=False)
 
+**Q: How can I use ResNet given that it does not have a classifier?**
+
+Put your classifier on the final layer of the model (the fully connected layer) model.fc = classifier
