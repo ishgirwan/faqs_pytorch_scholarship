@@ -42,5 +42,9 @@
 
 -  https://datascience.stackexchange.com/questions/23159/in-softmax-classifier-why-use-exp-function-to-do-normalization
 
+**Q: Why do we need activation function?**
 
+  Resources:
+  
+-  https://towardsdatascience.com/activation-functions-and-its-types-which-is-better-a9a5310cc8f
         
