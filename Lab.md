@@ -20,5 +20,8 @@
 
   >If you have already saved model checkpoint from GPU, you can try this to load it in CPU env: checkpoint = torch.load(filename, map_location=lambda storage, loc: storage)
 
+**Q: Will I have to train my model on pytorch 0.4.0 to pass the test?**
 
+No, if you train your model on a later version of pytorch then to pass you should include strict=False when loading the state_dict, i.e. 
+model.load_state_dict(checkpoint[‘state_dict’], strict=False)
 
