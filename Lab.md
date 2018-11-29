@@ -19,5 +19,7 @@ Answered by @Vittorio Nardone
 
 >If you have already saved model checkpoint from GPU, you can try this to load it in CPU env: checkpoint = torch.load(filename, map_location=lambda storage, loc: storage)
 
+**Q: Is it possible to see how the test-set accuracy is being calculated (not the value) There's a lot of confusion if someone uses a non-convential way to do the assignments...**
+-   Unfortunately, these details can not be shared. 
 
 

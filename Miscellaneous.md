@@ -25,3 +25,17 @@
 **Q: About our side or group projects, how do you suggest publishing and sharing them? Maybe in a blog and then repost it to the Facebook group or directly in facebook album?**
 -   We share the details once we announce the program. In the meantime, sharing here in Slack in the new #side-projects channel and in a blog is a fantastic idea - especially as the facebook group is private.
 
+**Q: Do student leaders need to submit any reports?**
+-   No formal reports are required but please do check in by attending the weekly SL meetings if you can which are helld in the private SL channel.
+
+**Q: Are there any plans about discounts for students who will not be in top 300?**
+- The updates will be shared after the results are out, meanwhile, keep working hard. All of us have an equal chance of still being in top 300 ;)
+
+**Q: How did you select the top 10,000 scholar recipient, did you use an AI or machine learning?**
+-   We factor in many things. However, like any other University we do not share the selection process.  Everyone here should feel proud to have been selected!
+
+**Q:  Since you are unable to update your application essay. Will the Facebook story album and story be considered part of selection process?**
+-   Keep in mind that this experience, this program is all about growth and learning. Hearing your student story is what really drives home - for Udacity as well as Facebook - that this Scholarship opportunity is something we need to do more of. We hope that you will submit your story to us.
+
+**Q: Do student leaders have more chance of getting selected for the nanodegree?**
+-   Being a Student Leader doesn't guarantee anything. You still need to participate, put in the work and make sure that your model is good enough.
