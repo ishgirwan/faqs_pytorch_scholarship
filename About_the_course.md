@@ -10,7 +10,7 @@
 -   After the deadline passes you'll retain static access to the coursework - meaning it will be viewable but you will not be able to resubmit the last Challenge project. 
 
 **Q: What are some other student leader opportunities coming in December?**
--   The in [Tandem program](https://sites.google.com/udacity.com/pytorch-scholarship-facebook/community?authuser=0#h.p_k7Juqt2topbl) is coming soon! 
+-   There is a [Tandem program](https://sites.google.com/udacity.com/pytorch-scholarship-facebook/community?authuser=0#h.p_k7Juqt2topbl) is coming soon! 
 
 **Q: Are there any recommended timeline where people are expected to be at what time so as to monitor our progress?**
 - There are no specific deadlines, other than the final deadline of Jan 9, 2019. People are suggested to go at their own pace, and working a few hours evryday is better than cramping all the content in one week.
