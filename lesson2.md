@@ -44,15 +44,18 @@ Resources:
 
 **Q: When and why is One-Hot-Encoding used?**
 
-Ressources: 
+_-Quick answer:_ 
+* Used for **multi-class-classification (non-linear)**. 
+* _Background:_ A multic-class-classifier can be viewed as the combination of seperate single classifiers: [One-Vs-All](https://utkuufuk.github.io/2018/06/03/one-vs-all-classification/) 
+* So essentially the error function of a multi-class-classifier can be viewed as the sum of the errors of all the separate classifiers; or: _the error of **each** data-example from **each** classifier_. 
+* _What is needed?:_ The error is always determined by the difference to a correct given value! That means one needs a given true output for each data point _for each classifier_ 
+* _What is given?:_  In the given data-set there is only **one** correct true value for each data-example/point which is equal to: _ the number of the correct class_ 
+* _What is the solution?:_ The one value indicating the correct class by a number from: _[1 - #classes]_ has to be transformed from a scalar to a vector which has one entry for each classifier and either says _0 (not correct class) or 1 (correct class)_. 
 
--Quick answer: Used for multi-class-non-linear-classification. 
-Essentially the error function of a multi-class-classifier can be viewed as the sum of the errors of all the seperate classifieres (= potential classes). 
-That means I want the error of each data-example from each classifier. 
-Thats also means I need a given true output value for each datapoint for each classifier, meaning the given output point per data-example has to transformed from a scalar containing the number of the correct class to a vector whitch one entry for each classifier (potential class). 
-I.e.: if y1 = 3 and there would be 5 different possible classes it has to be converted to y1 = [0, 0, 1, 0, 0]; 
+--> **I.e.:** if y1 = 3 and there would be 5 different possible classes it has to be converted to y1 = [0, 0, 1, 0, 0];
 
--Additional Ressources: 
+_-Additional_ Ressources: 
+
 https://towardsdatascience.com/smarter-ways-to-encode-categorical-data-for-machine-learning-part-1-of-3-6dca2f71b159
 
 
