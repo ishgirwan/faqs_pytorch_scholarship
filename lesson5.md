@@ -17,7 +17,7 @@ Possible solutions:
 
 -  `conda install -c conda-forge opencv`
 
-**Q: Why am I getting this error: `Invalid argument 0: Sizes of tensors must match except in dimension 0. Got 499 and 442 in dimension 2 at...`**
+**Q: Why am I getting this error: `Invalid argument 0: Sizes of tensors must match except in dimension 0. Got 499 and 442 in dimension 2 at...` ?**
 
 Your images are not all the same size.
 
@@ -31,15 +31,15 @@ Possible solutions:
 
 - `transforms.CenterCrop(224)`
 
-**Q: While using `transforms.Normalize`, we pass in a list of means and a list of standard deviations (std) to normalize the input color channels. How do we define means and std values and why it's 0.5 in some cases?**
+**Q: While using `transforms.Normalize`, we pass in a list of means and a list of standard deviations (std) to normalize the input color channels. How do we define means and std values and why is it 0.5 in some cases?**
 
 Ideally, you should use the mean and standard deviation for each channel. In the case of Imagenet, you use these precalculated values `normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])`. The reason for using 0.5 in the case of mnist is to reduce complexity for the readers. Check Soumith Chintala’s comment here https://discuss.pytorch.org/t/normalization-in-the-mnist-example/457/7
 
-**Q: In `weight=torch.from_numpy(filters).unsqueeze(1).type(torch.FloatTensor)` what does `unsqueeze(1)` mean .**
+**Q: In `weight=torch.from_numpy(filters).unsqueeze(1).type(torch.FloatTensor)` what does `unsqueeze(1)` mean?**
 
 Answered by @clement:
 
->The reason why we do it is because we often work with 4 dimensional tensors in CNNs. And is usually in format, where N 
-is Batch Size, Cin is the number of channels, in this case as it is grayscale it is 1. That's the reason why we use unsqueeze(1) which
-introduces the dimension of 1 at the second axis. Hope this helps.
+>The reason why we do it is because we often work with 4 dimensional tensors in CNNs. And usually in the format where N 
+is Batch Size and Cin is the number of channels, in this case as it is grayscale it is 1. That's the reason why we use `unsqueeze(1)` 
+which introduces the dimension of 1 at the second axis. Hope this helps.
 
