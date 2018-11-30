@@ -1,10 +1,8 @@
-# LAB
+# Lab challenge
 
 **Q: What are the tips and tricks that could be helpful in the Lab challenge**
 
-  Here are some created by @mhendri:
-    
--   https://docs.google.com/document/d/1-MCDPOejsn2hq9EoBzMpzGv9jEdtMWoIwjkAa1cVbSM/edit#heading=h.nj23sjpj5u97
+  This is a resource created by @mhendri : [Google doc](https://docs.google.com/document/d/1-MCDPOejsn2hq9EoBzMpzGv9jEdtMWoIwjkAa1cVbSM/edit#heading=h.nj23sjpj5u97)
 
 **Q: After submission of the Final Project will there be a second chance if I don’t pass?**
 
