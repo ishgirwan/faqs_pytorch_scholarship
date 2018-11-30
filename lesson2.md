@@ -56,7 +56,7 @@ _-Quick answer:_
 
 _-Additional_ Ressources: 
 
-https://towardsdatascience.com/smarter-ways-to-encode-categorical-data-for-machine-learning-part-1-of-3-6dca2f71b159
+-https://towardsdatascience.com/smarter-ways-to-encode-categorical-data-for-machine-learning-part-1-of-3-6dca2f71b159
 
 
         
