@@ -3,7 +3,7 @@
 **Q: What is the use of Transfrom in dataloader?**
 
   Resource:
--  https://pytorch.org/docs/stable/torchvision/transforms.html
+-  [torchvision.transforms](https://pytorch.org/docs/stable/torchvision/transforms.html)
 
 **Q: Why I'm getting this error: `AttributeError: module 'helper' has no attribute 'view_classify'`**
 
@@ -14,12 +14,12 @@
 
 **Q: What is the difference between: Output = model(images) and Output = model.forward(images)**
 
-  The difference is that all the hooks are dispatched in the __call__ function, so if you call .forward and have hooks in your model, the hooks won’t have any effect. Check this discussion: https://discuss.pytorch.org/t/any-different-between-model-input-and-model-forward-input/3690
+  The difference is that all the hooks are dispatched in the __call__ function, so if you call .forward and have hooks in your model, the hooks won’t have any effect. Check this discussion: [Any difference between model(input) and model.forward(input)](https://discuss.pytorch.org/t/any-different-between-model-input-and-model-forward-input/3690)
 
 **Q: I need help regarding transfer learning using PyTorch**
 
   Resource:
--  https://pytorch.org/tutorials/beginner/transfer_learning_tutorial.html
+-  [Transfer Learning Tutorial](https://pytorch.org/tutorials/beginner/transfer_learning_tutorial.html)
 
 **Q: We are taking the log_softmax in forward function, so why do you compute torch.exp(model(images))**
 
@@ -54,11 +54,11 @@ Answered by @sundeep
 >There is no mathematical logic behind this number; it is just convention. You can pick your own number, or treat it as a hyperparameter and find out what is an optimal number of hidden units.
 
 Resource:
--  https://stats.stackexchange.com/questions/181/how-to-choose-the-number-of-hidden-layers-and-nodes-in-a-feedforward-neural-netw
+-  [How to choose the number of hidden layers and nodes in a feedforward neural network?](https://stats.stackexchange.com/questions/181/how-to-choose-the-number-of-hidden-layers-and-nodes-in-a-feedforward-neural-netw)
 
 **Q: How do we determine the number of hidden layers?**
 
 Resource:
--  https://stackoverflow.com/questions/10565868/multi-layer-perceptron-mlp-architecture-criteria-for-choosing-number-of-hidde
+-  [Multi-layer perceptron (MLP) architecture: criteria for choosing number of hidden layers and size of the hidden layer?](https://stackoverflow.com/questions/10565868/multi-layer-perceptron-mlp-architecture-criteria-for-choosing-number-of-hidde)
 
 
