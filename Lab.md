@@ -3,6 +3,22 @@
 **Q: What are the tips and tricks that could be helpful in the Lab challenge**
 - This is a resource created by @mhendri : [Google doc](https://docs.google.com/document/d/1-MCDPOejsn2hq9EoBzMpzGv9jEdtMWoIwjkAa1cVbSM/edit#heading=h.nj23sjpj5u97)
 
+**Q: Can I use transfer learning?**
+- This is the recommended approach. The supplied notebook `Image Classifier Project.ipynb` states “you should use one of the pretrained 
+models from `torchvision.models` to get the image features.”
+
+**Q: How do I get the best possible model?**
+- You need to select:
+  *  model for transfer learning
+  *  definition of your classifier
+  *  batch size
+  *  optimizer
+  *  learning rate(s)
+  *  epochs.
+  
+Completing the course, reading the Slack channels and reading around the subject will help with these decisions. Note the accuracy and 
+loss results you get when varying these parameters and choose a combination that works well.
+
 **Q: After submission of the Final Project will there be a second chance if I don’t pass?**
 - You can submit as many times as you like. The best result will be considered for your final score.
 
