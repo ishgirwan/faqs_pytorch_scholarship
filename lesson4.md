@@ -65,3 +65,10 @@ Resource:
 
 As per the [PyTorch docs](https://pytorch.org/docs/stable/nn.html?highlight=crossentropy#torch.nn.CrossEntropyLoss), there is no difference. You could also refer to this [discussion](https://discuss.pytorch.org/t/what-is-the-difference-between-using-the-cross-entropy-loss-and-using-log-softmax-followed-by-nll-loss/14825) on the Pytorch forum.
 
+
+**Q11: What are PyTorch tensors?**
+
+As per [Pytorch docs](https://pytorch.org/docs/stable/tensors.html#torch-tensor), 
+>A torch.Tensor is a multi-dimensional matrix containing elements of a single data type.
+
+If you want to know more about tensors, you could also refer to slides or handouts of 1.4, 1.5 and 1.6 of this [Deep Learning course at EPFL](https://fleuret.org/ee559/). 
