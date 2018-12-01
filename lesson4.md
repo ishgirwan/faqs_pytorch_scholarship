@@ -61,4 +61,7 @@ Resource:
 Resource:
 -  [Multi-layer perceptron (MLP) architecture: criteria for choosing number of hidden layers and size of the hidden layer?](https://stackoverflow.com/questions/10565868/multi-layer-perceptron-mlp-architecture-criteria-for-choosing-number-of-hidde)
 
+**Is there any difference between using nn.CrossEntropyLoss and the combination of nn.LogSoftmax() and nn.NLLLoss()?**
+
+As per the [PyTorch docs](https://pytorch.org/docs/stable/nn.html?highlight=crossentropy#torch.nn.CrossEntropyLoss), there is no difference. You could also refer to this [discussion](https://discuss.pytorch.org/t/what-is-the-difference-between-using-the-cross-entropy-loss-and-using-log-softmax-followed-by-nll-loss/14825) on the Pytorch forum.
 
