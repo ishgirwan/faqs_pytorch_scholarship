@@ -1,7 +1,7 @@
 
 # Using GOOGLE COLAB
 
-**Q: How to clone repo in my drive?**
+**Q1: How to clone repo in my drive?**
 
   Mount the drive using:
 
@@ -14,23 +14,23 @@
     !`git clone <github repo url>
 
 
-**Q: How to use Colab**
+**Q2: How to use Colab**
 
   Resource:
 -    https://medium.com/deep-learning-turkey/google-colab-free-gpu-tutorial-e113627b9f5d
 
 
-**Q: I am trying to run the codes on Colab but got `AttributeError: module 'PIL.Image' has no attribute 'register_decoder'`.**
+**Q3: I am trying to run the codes on Colab but got `AttributeError: module 'PIL.Image' has no attribute 'register_decoder'`.**
 
   Execute `!pip install Pillow==4.1.1` and restart your notebook.
 
 
-**Q: In colab is it necessary to write the lines related to cuda?**
+**Q4: In colab is it necessary to write the lines related to cuda?**
 
   Yes.
 
 
-**Q: How can I get the cat-dog dataset?**
+**Q5: How can I get the cat-dog dataset?**
 
   Run the following commands:
 
