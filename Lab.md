@@ -36,8 +36,8 @@ i.e. `model.load_state_dict(checkpoint[‘state_dict’], strict=False)`
 numbers) are treated as characters. The code in the notebook creates a `cat_to_name` dictionary of folder names and flower names. We 
 then need to create a look-up from categories/folder names to labels, for example, by using `your_dataset.classes`.
 
-`class_to_idx = {sorted(your_dataset.classes)[i]: i for i in range(len(your_dataset.classes))}`
+  `class_to_idx = {sorted(your_dataset.classes)[i]: i for i in range(len(your_dataset.classes))}`
 
-`{k: class_to_idx[k] for k in list(class_to_idx)[:7]}`
+  `{k: class_to_idx[k] for k in list(class_to_idx)[:7]}`
 
-`{'1': 0, '10': 1, '100': 2, '101': 3, '102': 4, '11': 5, '12': 6}`
+  `{'1': 0, '10': 1, '100': 2, '101': 3, '102': 4, '11': 5, '12': 6}`
