@@ -57,3 +57,39 @@ then need to create a look-up from categories/folder names to labels, for exampl
   `{k: class_to_idx[k] for k in list(class_to_idx)[:7]}`
 
   `{'1': 0, '10': 1, '100': 2, '101': 3, '102': 4, '11': 5, '12': 6}`
+
+
+**Q12: How can I save bandwidth at the expense of drive storage when training my model using Google Colab?**
+
+- From `@ecdrid`
+
+With your filename as `xyz.pth`, after some training:
+
+```# Install the PyDrive wrapper & import libraries.
+# This only needs to be done once in a notebook.
+!pip install -U -q PyDrive
+
+from pydrive.auth import GoogleAuth
+from pydrive.drive import GoogleDrive
+from google.colab import auth
+from oauth2client.client import GoogleCredentials
+
+# Which file to send?
+file_name = "xyz.pth" #make sure you always change this..
+
+from googleapiclient.http import MediaFileUpload
+from googleapiclient.discovery import build
+
+auth.authenticate_user()
+drive_service = build('drive', 'v3')
+
+def save_file_to_drive(name, path):
+  file_metadata = {'name': name, 'mimeType': 'application/octet-stream'}
+  media = MediaFileUpload(path, mimetype='application/octet-stream', resumable=True)
+  created = drive_service.files().create(body=file_metadata, media_body=media, fields='id').execute()
+  return created
+
+save_file_to_drive(file_name, file_name)
+```
+
+Now you can just connect your drive and start training further if you wish.
