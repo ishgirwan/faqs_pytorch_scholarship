@@ -17,7 +17,7 @@ Mount the drive using:
 **Q2: How do I use Colab?**
 
 Resource:
--    https://medium.com/deep-learning-turkey/google-colab-free-gpu-tutorial-e113627b9f5d
+-    [Google Colab Free GPU Tutorial](https://medium.com/deep-learning-turkey/google-colab-free-gpu-tutorial-e113627b9f5d)
 
 
 **Q3: I am trying to run the codes on Colab but got `AttributeError: module 'PIL.Image' has no attribute 'register_decoder'`.**
