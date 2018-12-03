@@ -1,7 +1,9 @@
 # Lab challenge
 
 **Q1: What are the tips and tricks that could be helpful in the Lab challenge**
-- This is a resource created by @mhendri : [Google doc](https://docs.google.com/document/d/1-MCDPOejsn2hq9EoBzMpzGv9jEdtMWoIwjkAa1cVbSM/edit#heading=h.nj23sjpj5u97)
+- This is a useful resource created by @mhendri : [Google doc](https://docs.google.com/document/d/1-MCDPOejsn2hq9EoBzMpzGv9jEdtMWoIwjkAa1cVbSM/edit#heading=h.nj23sjpj5u97)
+
+For example, run all the Test code in a single cell.
 
 **Q2: Can I use transfer learning?**
 - This is the recommended approach. The supplied notebook `Image Classifier Project.ipynb` states “you should use one of the pretrained 
@@ -38,7 +40,8 @@ Alternatively, you can put your model onto the CPU before saving by using `model
 
 **Q8: Will I have to train my model on pytorch 0.4.0 to pass the test?**
 - No, if you train your model on a later version of pytorch then to pass you should include `strict=False` when loading the `state_dict`,
-i.e. `model.load_state_dict(checkpoint[‘state_dict’], strict=False)`
+i.e. `model.load_state_dict(checkpoint[‘state_dict’], strict=False)`. This ignores items added in later versions, e.g. 
+`num_batches_tracked`.
 
 **Q9: Is it possible to see how the test-set accuracy is being calculated (not the value)? There's a lot of confusion if someone uses a non-convential way to do the assignments...**
 - Unfortunately, these details cannot be shared. 
@@ -50,7 +53,7 @@ i.e. `model.load_state_dict(checkpoint[‘state_dict’], strict=False)`
 - Note that when using `ImageFolder`the folder names are treated as character strings, so their order is 1, 10, 100, 101, 102, 11, 
 12, … and the images in these respective folders are given labels 0, 1, 2, 3, 4, 5, 6, … The folder names (which here happen to be 
 numbers) are treated as characters. The code in the notebook creates a `cat_to_name` dictionary of folder names and flower names. We 
-then need to create a look-up from categories/folder names to labels, for example, by using `your_dataset.classes`.
+then need a look-up from categories/folder names to labels, for example, by using `your_dataset.classes`.
 
   `class_to_idx = {sorted(your_dataset.classes)[i]: i for i in range(len(your_dataset.classes))}`
 
@@ -91,5 +94,4 @@ def save_file_to_drive(name, path):
 
 save_file_to_drive(file_name, file_name)
 ```
-
 Now you can just connect your drive and start training further if you wish.
