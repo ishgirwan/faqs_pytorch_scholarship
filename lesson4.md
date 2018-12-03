@@ -23,9 +23,8 @@
 
 **Q5: We are taking the log_softmax in forward function, so why do you compute torch.exp(model(images))**
 
-  Answered by @e0lithic
-  >We already had probabilities from the softmax on top of which we used a log function to undo the log operation and get back the probabilities.
-`exp(log(softmax)) = softmax` So, as soon as your took the softmax you got the probabilities. But we took logsoftmax , so that we could get better optmization using the error function, which was needed for backprop.But for making predictions we only needed the probabilities. Since, our networks output layer was outputting log(softmax), while we needed simply the softmax( the probablities), hence we used exp(log(softmax)) = probablities.
+  Answered by @Oleksandra
+  > We need probabilities to pick the most probable class, for that we apply Softmax. However, because of the [computational reasons](https://docs.python.org/3/tutorial/floatingpoint.html) when dealing with probabilities, we want to deal with their Log instead. So, instead of outputting Softmax, we output LogSoftmax. The output is no longer in a probability space, but since Log is a monotonic function, we do not really care - still just picking the biggest number. Outputting LogSoftmax also works seamlessly when using NLLLoss: since NLLLoss expects scores per classes, rather than their probabilities, we wouldn’t be able to use the output of Softmax (which outputs probabilities) directly, but fortunately, we already got scores in the form of LogSoftmax! Now, to get the probabilities of the classes rather than their scores, we need to undo the Log operation on Softmax — so, we need to apply Exp.
 
 **Q6: Could anyone tell me what is `Top-1 error` and `Top-5 error` of pre-trained networks in torchvision.models?**
 
