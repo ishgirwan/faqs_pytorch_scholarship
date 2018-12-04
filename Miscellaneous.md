@@ -38,4 +38,10 @@
 -   Keep in mind that this experience, this program is all about growth and learning. Hearing your student story is what really drives home - for Udacity as well as Facebook - that this Scholarship opportunity is something we need to do more of. We hope that you will submit your story to us.
 
 **Q13: Do student leaders have more chance of getting selected for the nanodegree?**
--   Being a Student Leader doesn't guarantee anything. You still need to participate, put in the work and make sure that your model is good enough.
+-   Being a Student Leader doesn't guarantee anything. You still need to participate regularly like everyone, put in the work and make sure that your model is good enough.
+
+**Q14: How much important is #general-discussion  chanel than #live-help  chanel, is the evaluation the same?**
+-   Contribution in all the channels are counted towards your participation. It is about the quality and not the quantity.
+
+**Q15: How is the analysis of Slack Activity done?**
+-    I'm afraid like any brick and mortar learning institution there are some things that we do not share. Outside of revealing the selection criteria for Phase 2, we won't be sharing more details.

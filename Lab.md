@@ -100,3 +100,6 @@ def save_file_to_drive(name, path):
 save_file_to_drive(file_name, file_name)
 ```
 Now you can just connect your drive and start training further if you wish.
+
+**Q14: In case we want to see the feedback from the evaluation of the project , will be a problem if we upload the project to get feedback from the evaluator/ mentor?**
+- You are welcome to receive feedback from your classmates and Alumni Volunteers. Mentors per say are only available in the full ND program. Nonetheless, our alumni volunteers have the skills to help to out, so don't hesistate.
