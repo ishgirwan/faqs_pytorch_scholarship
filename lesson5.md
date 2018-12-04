@@ -38,7 +38,5 @@ Ideally, you should use the mean and standard deviation for each channel. In the
 
 Answered by @clement:
 
->The reason why we do it is because we often work with 4 dimensional tensors in CNNs. And usually in the format where N 
-is Batch Size and Cin is the number of channels, in this case as it is grayscale it is 1. That's the reason why we use `unsqueeze(1)` 
-which introduces the dimension of 1 at the second axis. Hope this helps.
+>The reason why we need to unsqueeze which adds in an additional dimension is due to how PyTorch passes in the CNN parameters.`(N,Cin,H,W)` is the input format to all CNNs defined in PyTorch, where N is the batch size, Cin is the number of channels i.e. `grayscale = 1 and color = 3`, H is the Height of the image, and W is the Width of the image. It is a neat trick to introduce a dimension of size 1 (using unsqueeze) and since we are dealing with grayscale images where the number of input channels of grayscale is 1, we can just unsqueeze index 1 (which is the second position/dimension) of the tensor.
 
