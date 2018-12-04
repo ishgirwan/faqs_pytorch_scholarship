@@ -71,3 +71,9 @@ As per [Pytorch docs](https://pytorch.org/docs/stable/tensors.html#torch-tensor)
 >A torch.Tensor is a multi-dimensional matrix containing elements of a single data type.
 
 If you want to know more about tensors, you could also refer to slides or handouts of 1.4, 1.5 and 1.6 of this [Deep Learning course at EPFL](https://fleuret.org/ee559/). 
+
+**Q12: When I tried to run the model on GPU in my local machine it gave CUDA Driver Error/RuntimeError**
+
+ Most ML Libraries require Nvidia GPU with Compute Capability 3.0 or higher. Same is for PyTorch. GoTo following link and take a look at your GPU Model Number under category, if the compute capability is less than 3.0 then you can't run on GPU. 
+    Link :  https://developer.nvidia.com/cuda-gpus
+    But if you want you can build PyTorch from source if you really want to run on an old GPU: https://discuss.pytorch.org/t/pytorch-version-for-cuda-compute-capability-3-0-gtx-780m/15889 . But this will not give you a high speedup due to less CUDA Cores and memory bandwidth of those old GPUs
