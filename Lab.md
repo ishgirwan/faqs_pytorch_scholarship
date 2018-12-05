@@ -105,5 +105,5 @@ Now you can just connect your drive and start training further if you wish.
 - You are welcome to receive feedback from your classmates and alumni volunteers. Mentors _per se_ are only available in the full ND program. Nonetheless, our alumni volunteers have the skills to help to out, so don't hesistate.
 
 **Q15: Is there a public leaderboard where I can compare my final score?**
-- There is no official leaderboard but some students have created a [public spreadsheet](https://docs.google.com/spreadsheets/d/1eVqdzQtS4xJDO-nZB8E3PvhpSgYML5dR7Mdh5CCtt-E/edit?usp=sharing) where students can enter their scores and comapre model architectures and validation scores.  
+- There is no official leaderboard but some students have created a [public spreadsheet](https://docs.google.com/spreadsheets/d/1eVqdzQtS4xJDO-nZB8E3PvhpSgYML5dR7Mdh5CCtt-E/edit?usp=sharing) where students can enter their scores and compare model architectures and validation scores.  
 
