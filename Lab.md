@@ -1,18 +1,18 @@
 # Lab challenge
 
 **Q1: What are the tips and tricks that could be helpful in the Lab challenge?**
-- This is a useful resource created by @mhendri : [Google doc](https://docs.google.com/document/d/1-MCDPOejsn2hq9EoBzMpzGv9jEdtMWoIwjkAa1cVbSM/edit#heading=h.nj23sjpj5u97)
+- This is a useful resource created by @mhendri : [FINAL LAB CHALLENGE - Tips, Model Performance, Submission Troubleshooting, etc](https://docs.google.com/document/d/1-MCDPOejsn2hq9EoBzMpzGv9jEdtMWoIwjkAa1cVbSM/edit#heading=h.nj23sjpj5u97). For example, a simple tip coul be to run all the Test code in a single cell.
 
-For example, run all the Test code in a single cell.
+- You can also refer to the medium article published by Jose Nieto who is a Content Developer at Udacity: [Implementing an Image Classifier with PyTorch](https://medium.com/udacity/implementing-an-image-classifier-with-pytorch-part-1-cf5444b8e9c9). 
+
 
 **Q2: Is there any Colab setup that I can use for the Lab challenge?**
 
-- Have a look at this [awesome setup](https://colab.research.google.com/drive/1N7r7HJ4ImgZNLXsSiuwCadVVwsGjLmFy) created by @avinash
+- Have a look at this [awesome setup](https://colab.research.google.com/drive/1N7r7HJ4ImgZNLXsSiuwCadVVwsGjLmFy) created by @avinash.
 
 
 **Q3: Can I use transfer learning?**
-- This is the recommended approach. The supplied notebook `Image Classifier Project.ipynb` states “you should use one of the pretrained 
-models from `torchvision.models` to get the image features.”
+- This is the recommended approach. The supplied notebook `Image Classifier Project.ipynb` states “you should use one of the pretrained models from `torchvision.models` to get the image features.”
 
 **Q4: How do I get the best possible model?**
 - You need to select:
