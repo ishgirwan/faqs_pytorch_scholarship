@@ -1,9 +1,9 @@
 # Lab challenge
 
 **Q1: What are the tips and tricks that could be helpful in the Lab challenge?**
-- This is a useful resource created by @mhendri : [FINAL LAB CHALLENGE - Tips, Model Performance, Submission Troubleshooting, etc](https://docs.google.com/document/d/1-MCDPOejsn2hq9EoBzMpzGv9jEdtMWoIwjkAa1cVbSM/edit#heading=h.nj23sjpj5u97). For example, a simple tip coul be to run all the Test code in a single cell.
+- This is a useful resource created by @mhendri : [FINAL LAB CHALLENGE - Tips, Model Performance, Submission Troubleshooting, etc](https://docs.google.com/document/d/1-MCDPOejsn2hq9EoBzMpzGv9jEdtMWoIwjkAa1cVbSM/edit#heading=h.nj23sjpj5u97). For example, a simple tip could be to run all the Test code in a single cell.
 
-- You can also refer to the medium article published by Jose Nieto who is a Content Developer at Udacity: [Implementing an Image Classifier with PyTorch](https://medium.com/udacity/implementing-an-image-classifier-with-pytorch-part-1-cf5444b8e9c9). 
+- You can also refer to the medium article published by José Nieto who is a Content Developer at Udacity: [Implementing an Image Classifier with PyTorch](https://medium.com/udacity/implementing-an-image-classifier-with-pytorch-part-1-cf5444b8e9c9). 
 
 
 **Q2: Is there any Colab setup that I can use for the Lab challenge?**
@@ -101,10 +101,9 @@ save_file_to_drive(file_name, file_name)
 ```
 Now you can just connect your drive and start training further if you wish.
 
-**Q14: In case we want to see the feedback from the evaluation of the project , will be a problem if we upload the project to get feedback from the evaluator/ mentor?**
-- You are welcome to receive feedback from your classmates and Alumni Volunteers. Mentors per say are only available in the full ND program. Nonetheless, our alumni volunteers have the skills to help to out, so don't hesistate.
+**Q14: In case we want to see the feedback from the evaluation of the project, will it be a problem if we upload the project to get feedback from the evaluator/mentor?**
+- You are welcome to receive feedback from your classmates and alumni volunteers. Mentors _per se_ are only available in the full ND program. Nonetheless, our alumni volunteers have the skills to help to out, so don't hesistate.
 
 **Q15: Is there a public leaderboard where I can compare my final score?**
-
-There is no official leaderboard but some students have create a [public spreadsheet](https://docs.google.com/spreadsheets/d/1eVqdzQtS4xJDO-nZB8E3PvhpSgYML5dR7Mdh5CCtt-E/edit?usp=sharing) where students can enter their scores and comapre model architectures and validation scores.  
+- There is no official leaderboard but some students have created a [public spreadsheet](https://docs.google.com/spreadsheets/d/1eVqdzQtS4xJDO-nZB8E3PvhpSgYML5dR7Mdh5CCtt-E/edit?usp=sharing) where students can enter their scores and comapre model architectures and validation scores.  
 
