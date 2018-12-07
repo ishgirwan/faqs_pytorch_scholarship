@@ -1,7 +1,7 @@
 # Lab challenge
 
 **Q1: What are the tips and tricks that could be helpful in the Lab challenge?**
-- This is a useful resource created by @mhendri : [FINAL LAB CHALLENGE - Tips, Model Performance, Submission Troubleshooting, etc](https://docs.google.com/document/d/1-MCDPOejsn2hq9EoBzMpzGv9jEdtMWoIwjkAa1cVbSM/edit#heading=h.nj23sjpj5u97). For example, a simple tip could be to run all the Test code in a single cell.
+- This is a super useful resource created by @mhendri : [FINAL LAB CHALLENGE - Tips, Model Performance, Submission Troubleshooting, etc](https://docs.google.com/document/d/1-MCDPOejsn2hq9EoBzMpzGv9jEdtMWoIwjkAa1cVbSM/edit#heading=h.nj23sjpj5u97). For example, a simple tip could be to run all the Test code in a single cell.
 
 - You can also refer to the medium article published by José Nieto who is a Content Developer at Udacity: [Implementing an Image Classifier with PyTorch](https://medium.com/udacity/implementing-an-image-classifier-with-pytorch-part-1-cf5444b8e9c9). 
 
