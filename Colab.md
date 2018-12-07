@@ -10,7 +10,7 @@ Mount the drive using:
 
   Clone the repo in your drive
 
-    %cd /content/drive/
+    %cd /content/drive/<name of your drive>
     !git clone <github repo url>
 
 
