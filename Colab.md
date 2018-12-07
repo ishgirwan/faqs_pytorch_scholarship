@@ -10,8 +10,8 @@ Mount the drive using:
 
   Clone the repo in your drive
 
-    %cd /content/drive/`
-    !`git clone <github repo url>
+    %cd /content/drive/
+    !git clone <github repo url>
 
 
 **Q2: How do I use Colab?**
