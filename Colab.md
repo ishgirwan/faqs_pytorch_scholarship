@@ -22,7 +22,7 @@ Resource:
 
 **Q3: I am trying to run the codes on Colab but got `AttributeError: module 'PIL.Image' has no attribute 'register_decoder'`.**
 
-Execute `!pip install Pillow==4.1.1` and restart your notebook.
+Execute `!pip install Pillow==4.1.1` or `!pip install --no-cache-dir -I pillow`.  Restart your notebook.
 
 
 **Q4: In Colab do I need to write the lines related to cuda?**
