@@ -26,6 +26,7 @@ Execute `!pip install Pillow==4.1.1` and restart your notebook.
 
 
 **Q4: In Colab do I need to write the lines related to cuda?**
+
 Yes.
 
 **Q5: How can I get the cat-dog dataset?**
