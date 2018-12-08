@@ -47,4 +47,9 @@
   Resource:
   
 -  [Activation functions and it’s types-Which is better?](https://towardsdatascience.com/activation-functions-and-its-types-which-is-better-a9a5310cc8f)
-        
+
+**Q9: What's the difference between np.dot(), np.matmul(),* for matrix multilication and when to use them?**
+- Resource: [numpy.dot vs numpy.matmul](https://stackoverflow.com/questions/34142485/difference-between-numpy-dot-and-python-3-5-matrix-multiplication)
+
+**Q10: Having a problem with gradient descent ?**
+- Here is a [tutorial](https://github.com/bhargitay/Facebook-Pytorch-Challenge-Notes/blob/master/Gradient%20Descent/Gradient_Descent.ipynb) on Gradient Descent with numpy (using the notebook provided by Udacity). *Created by @Beata.*
