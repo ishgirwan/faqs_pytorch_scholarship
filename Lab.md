@@ -123,8 +123,7 @@ Now you can just connect your drive and start training further if you wish.
 - You could train your model faster on GPU on Colab or Kaggle or another account. Training on CPU will be very slow and boring. Then, when you want to use the same model on CPU, you will need some variable casting like `checkpoint = torch.load(filepath, map_location='cpu')`.
 
 **Q18: How could I run my model on Google Colab, and leave it running for hours without bothering about terminations?**
-- When net gets disconnected it stops training, but after it reconnects, it continues from the point it stopped. So I say there is no problem leaving it.
-- Also, you can save checkpoints to Google Drive and load them back to continue the model training later. You can create some automations ...
+- You can save checkpoints to Google Drive and load them back to continue the model training later. 
 
 **Q19: Even with GPU, my model is taking more than 3 hours to train. Did anyone's model take longer?**
 - It depends on the GPU being used and yes, this lab is a relatively computationally expensive problem in the first place. You can also check this [page](https://datascience.stackexchange.com/questions/26209/why-is-training-take-so-long-on-my-gpu) for some info.
