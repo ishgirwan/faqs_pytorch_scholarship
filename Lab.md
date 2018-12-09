@@ -113,9 +113,9 @@ Now you can just connect your drive and start training further if you wish.
 - You can use Transfer Learning. It's mentioned in the jupyter notebook of lab project that you can start with VGG.
 
 **Q17: Since the model will run on CPUs on Udacity server, is there any technique that we can exploit to optimize the model for CPUs instead of GPUs?**
-- You could train your model faster on GPU on Colab or Kaggle or another account. Train it on CPU will be very slow and boring. Then, when you will want to use the same model on CPU, you will need some variable casting like `checkpoint = torch.load(filepath, map_location='cpu')` and `model.load_state_dict(checkpoint['state_dict'], strict=False)`.
+- You could train your model faster on GPU on Colab or Kaggle or another account. Training on CPU will be very slow and boring. Then, when you will want to use the same model on CPU, you will need some variable casting like `checkpoint = torch.load(filepath, map_location='cpu')` and `model.load_state_dict(checkpoint['state_dict'], strict=False)`.
 
-**Q18: How do you run my model on google colab, and leave it running for hours without bothering about terminations?**
+**Q18: How could I run my model on google colab, and leave it running for hours without bothering about terminations?**
 - When net gets disconnected it stops training, but after it reconnects, it continues from the point it stopped. So I say no problem leaving it.
 - Also, you can save checkpoints to Google Drive and load it back to later continue the model training. You can create some automations ...
 
