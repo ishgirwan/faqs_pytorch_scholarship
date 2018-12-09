@@ -6,4 +6,8 @@ Answered by @José Fernández Portal:
 
 >n_hidden defines the size of your hidden state. The hidden state is a tensor that RNN outputs in every sequence step (t) and is the input for the next sequence step (t+1). In your diagram, it is represented by the right arrows. Basically, the hidden state carry information along the sequence. Regarding its size (n_hidden), I think that a bigger hidden state will allow to transfer more information along the sequence, but it becomes harder to train.
 
+**Q: Are there any resources to help in the understanding of LSTM batches and sequences?**
 
+Answered by @sundeep:
+
+>A [video](https://slack-files.com/T3Q738VV1-F4P1VE8SY-6f4e7770d0) from Mat.
