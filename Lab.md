@@ -1,7 +1,7 @@
 # Lab challenge
 
 **Q1: What are the tips and tricks that could be helpful in the Lab challenge?**
-- This is a super useful resource created by @mhendri : [FINAL LAB CHALLENGE - Tips, Model Performance, Submission Troubleshooting, etc](https://docs.google.com/document/d/1-MCDPOejsn2hq9EoBzMpzGv9jEdtMWoIwjkAa1cVbSM/edit#heading=h.nj23sjpj5u97). For example, a simple tip could be to run all the Test code in a single cell.
+- This is a super useful resource created by @mhendri : [FINAL LAB CHALLENGE - Tips, Model Performance, Submission Troubleshooting, etc](https://docs.google.com/document/d/1-MCDPOejsn2hq9EoBzMpzGv9jEdtMWoIwjkAa1cVbSM/edit#heading=h.nj23sjpj5u97). For example, a simple tip is to run all the Test code in a single cell.
 
 - [How to move our model from Google Colab to Udacity’s Workspace (final lab project)](https://medium.com/@ml_kid/how-to-move-our-model-from-google-colab-to-udacitys-workspace-final-lab-project-88e1a0b7d6ab)
 
@@ -9,18 +9,19 @@
 
 - Applying the following methods can also help in achieving a decent validation loss:
   
-  - A single fully connected layer as your classifier.
-  - Try different learning rate schedulers as mentioned in the [PyTorch docs](https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate).
-  - Once the network is trained, unfreeze the weights of the complete network. Train it again for some more epochs at a very low learning rate.
-  - Image transformations can also help in achieving a bit higher accuracy. Refer to PyTorch [docs](https://pytorch.org/docs/stable/torchvision/transforms.html?highlight=transforms).
+  - Using a single fully connected layer as your classifier.
+  - Trying different learning rate schedulers as mentioned in the [PyTorch docs](https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate).
+  - Once the network is trained, try unfreezing the weights of the complete network, then train it further for some more epochs at a very
+  low learning rate.
+  - Image transformations can also help in achieving a slightly higher accuracy. Refer to the [PyTorch docs](https://pytorch.org/docs/stable/torchvision/transforms.html?highlight=transforms).
   
-**Q2: Is there any Colab setup that I can use for the Lab challenge?**
+**Q2: Is there any Google Colab setup that I can use for the Lab challenge?**
 
 - Have a look at this [awesome setup](https://colab.research.google.com/drive/1N7r7HJ4ImgZNLXsSiuwCadVVwsGjLmFy) created by @avinash.
 
-
 **Q3: Can I use transfer learning?**
-- This is the recommended approach. The supplied notebook `Image Classifier Project.ipynb` states “you should use one of the pretrained models from `torchvision.models` to get the image features.”
+- This is the recommended approach. The supplied notebook `Image Classifier Project.ipynb` states “you should use one of the pretrained
+models from `torchvision.models` to get the image features.”
 
 **Q4: How do I get the best possible model?**
 - You need to select:
@@ -56,7 +57,7 @@ Alternatively, you can put your model onto the CPU before saving by using `model
 i.e. `model.load_state_dict(checkpoint[‘state_dict’], strict=False)`. This ignores items added in later versions, e.g. 
 `num_batches_tracked`.
 
-**Q10: Is it possible to see how the test-set accuracy is being calculated (not the value)? There's a lot of confusion if someone uses a non-convential way to do the assignments...**
+**Q10: Is it possible to see how the test set accuracy is being calculated (not the value)? There's a lot of confusion if someone uses a non-convential way to do the assignments...**
 - Unfortunately, these details cannot be shared. 
 
 **Q11: How can I use ResNet given that it does not have a classifier?**
@@ -115,17 +116,15 @@ Now you can just connect your drive and start training further if you wish.
 **Q15: Is there a public leaderboard where I can compare my final score?**
 - There is no official leaderboard but some students have created a [public spreadsheet](https://docs.google.com/spreadsheets/d/1eVqdzQtS4xJDO-nZB8E3PvhpSgYML5dR7Mdh5CCtt-E/edit?usp=sharing) where students can enter their scores and compare model architectures and validation scores.  
 
-**Q16: In the final project, it says: `Here, you'll build an image classifier from scratch that will identify different species of flowers`. So, Do I have to build a classifier  or I can Use `Transfer Learning`?**
-- You can use Transfer Learning. It's mentioned in the jupyter notebook of lab project that you can start with VGG.
+**Q16: In the final project, it says: `Here, you'll build an image classifier from scratch that will identify different species of flowers`. So, do I have to build a classifier or I can use `Transfer Learning`?**
+- You can use Transfer Learning. It is stated in the Jupyter notebook of lab project that you can start with VGG.
 
-**Q17: Since the model will run on CPUs on Udacity server, is there any technique that we can exploit to optimize the model for CPUs instead of GPUs?**
-- You could train your model faster on GPU on Colab or Kaggle or another account. Training on CPU will be very slow and boring. Then, when you will want to use the same model on CPU, you will need some variable casting like `checkpoint = torch.load(filepath, map_location='cpu')` and `model.load_state_dict(checkpoint['state_dict'], strict=False)`.
+**Q17: Since the model will run on CPUs on the Udacity server, is there any technique that we can exploit to optimize the model for CPUs instead of GPUs?**
+- You could train your model faster on GPU on Colab or Kaggle or another account. Training on CPU will be very slow and boring. Then, when you want to use the same model on CPU, you will need some variable casting like `checkpoint = torch.load(filepath, map_location='cpu')`.
 
-**Q18: How could I run my model on google colab, and leave it running for hours without bothering about terminations?**
-- When net gets disconnected it stops training, but after it reconnects, it continues from the point it stopped. So I say no problem leaving it.
-- Also, you can save checkpoints to Google Drive and load it back to later continue the model training. You can create some automations ...
+**Q18: How could I run my model on Google Colab, and leave it running for hours without bothering about terminations?**
+- When net gets disconnected it stops training, but after it reconnects, it continues from the point it stopped. So I say there is no problem leaving it.
+- Also, you can save checkpoints to Google Drive and load them back to continue the model training later. You can create some automations ...
 
-**Q19: Even with GPU, my model is taking more than 3 hours to train. Anyone's model took longer?**
+**Q19: Even with GPU, my model is taking more than 3 hours to train. Did anyone's model take longer?**
 - It depends on the GPU being used and yes, this lab is a relatively computationally expensive problem in the first place. You can also check this [page](https://datascience.stackexchange.com/questions/26209/why-is-training-take-so-long-on-my-gpu) for some info.
-
-**Q20: 
