@@ -7,7 +7,13 @@
 
 - You can also refer to the medium article published by José Nieto who is a Content Developer at Udacity: [Implementing an Image Classifier with PyTorch](https://medium.com/udacity/implementing-an-image-classifier-with-pytorch-part-1-cf5444b8e9c9). 
 
-
+- Applying the following methods can also help in achieving a decent validation loss:
+  
+  - A single fully connected layer as your classifier.
+  - Try different learning rate schedulers as mentioned in the [PyTorch docs](https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate).
+  - Once the network is trained, unfreeze the weights of the complete network. Train it again for some more epochs at a very low learning rate.
+  - Image transformations can also help in achieving a bit higher accuracy. Refer to PyTorch [docs](https://pytorch.org/docs/stable/torchvision/transforms.html?highlight=transforms).
+  
 **Q2: Is there any Colab setup that I can use for the Lab challenge?**
 
 - Have a look at this [awesome setup](https://colab.research.google.com/drive/1N7r7HJ4ImgZNLXsSiuwCadVVwsGjLmFy) created by @avinash.
