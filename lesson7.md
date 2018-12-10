@@ -41,8 +41,5 @@
 # The targets, shifted by one
         y = np.roll(x,-1)
 ```
-    
-**Q: I do not see the significance of using embeddings, why can't we just use one-hot-encoding?**
-- Answered by @Clement:
->Usually, the issue with sentiment analysis not being able to contextually understand words that follow one after another, results in us not using the One-Hot-Encoding technique. There are quite a few reasons why One-Hot-Encoding isn't use, e.g. Because it's a high dimensional sparse matrix - 5 words = 5x5 Matrix, 10000 words = 10000x10000 matrix - Each row of the matrix contains a vector of only one non-zero value. Also, encoding it with one-hot-encoding does not consider words that come one after another. I'm not in Lesson 8 yet. But there is a pre-processing step called "Embeddings". The embeds convert words into ids and then a vector is assigned to the individual words. And the closer words that come one after another are grouped together closely. This vector size can be chosen and is usually called the Embedding Size. Quite an interesting concept regarding text classification and sentiment analysis. It's also used in collaborative filtering, e.g. Netflix is using it to gather user preferences based on other user preference. Performance improvements are seen with this method for such problem domains.
+
 
