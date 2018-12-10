@@ -26,6 +26,8 @@
 
 >A helpful [video](https://slack-files.com/T3Q738VV1-F4P1VE8SY-6f4e7770d0) from course instructor Mat.
 
+A step-through of the sizes used in the Anna Karenina text character example may help in understanding how batches work [here](https://www.dropbox.com/s/417tcya72itbyz1/RNN_sizes.pdf?dl=0).
+
 **Q: In `get_batches` is there a more elegant way of creating `y`?** 
 `Character_Level_RNN_Solution.ipynb`
 ``` 
