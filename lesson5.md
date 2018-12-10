@@ -1,4 +1,4 @@
-# Convolutional Neural Networks
+﻿# Convolutional Neural Networks
 
 **Q1: Why use a pooling layer?**
 
@@ -36,7 +36,11 @@ Ideally, you should use the mean and standard deviation for each channel. In the
 
 **Q5: In `weight=torch.from_numpy(filters).unsqueeze(1).type(torch.FloatTensor)` what does `unsqueeze(1)` mean?**
 
-Answered by @clement:
+Answered by @Clement:
 
->The reason why we need to unsqueeze which adds in an additional dimension is due to how PyTorch passes in the CNN parameters.`(N,Cin,H,W)` is the input format to all CNNs defined in PyTorch, where N is the batch size, Cin is the number of channels i.e. `grayscale = 1 and color = 3`, H is the Height of the image, and W is the Width of the image. It is a neat trick to introduce a dimension of size 1 (using unsqueeze) and since we are dealing with grayscale images where the number of input channels of grayscale is 1, we can just unsqueeze index 1 (which is the second position/dimension) of the tensor.
+>One of the reasons why we need to unsqueeze which adds in an additional dimension is due to how PyTorch passes in the CNN parameters.`(N,Cin,H,W)` is the input format to all CNNs defined in PyTorch, where N is the batch size, Cin is the number of channels i.e. `grayscale = 1 and color = 3`, H is the Height of the image, and W is the Width of the image. It is a neat trick to introduce a dimension of size 1 (using unsqueeze) and since if we are dealing with grayscale images where the number of input channels of grayscale is 1, we can just unsqueeze index 1 (which is the second position/dimension) of the tensor. 
+
+With the help of @Mitch Deoudes for clarification on this particular question:
+In this particular case, if you look at the __init__() function, the "weight" variable is actually being used to directly set the weights of the conv layer. The weight variable is a (4,1,4,4) matrix defined as [output_channels, input_channels, height_of_filter, width_of_filter] as our input provided to the nn.Conv2d is in the format of [input_channels, output_channels, height_of_filter, width_of_filter]. Remember to multiply 2 matrices we have to ensure that the dimensions of the first column and first row to be matched i.e. (NxM x MxO) etc. Therefore, since we are dealing with grayscale we can use a .unsqueeze(1) to introduce a 1 in the second dimension - yet another neat trick.
+
 

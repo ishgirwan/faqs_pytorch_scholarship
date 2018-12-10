@@ -1,4 +1,4 @@
-# Introduction to Neural Networks
+﻿# Introduction to Neural Networks
 
 **Q1: I am having some trouble understanding backpropagation when training the neural net.**
 
@@ -31,7 +31,14 @@
 -  [But what *is* a Neural Network? | Deep learning, chapter 1](https://www.youtube.com/watch?v=aircAruvnKk)
 
 **Q6: What is Gradient Descent?**
+Answered by @Clement:
+>Batch Gradient Descent also just known as Gradient Descent usually loads in the entire training examples (dataset) into the network at one go and update the weights based on all the training examples.
 
+Stochastic Gradient Descent loads 1 training example at one go and update the weights using only that training example.
+
+Lastly, Mini-Batch Gradient Descent is a combination of the two. Mini-Batch Gradient descent instead of taking the entire dataset takes in N batch size. Where N is the number of training examples you can choose. These N training examples are loaded into the network and are used to update the weights once. And subsequent N batches will continue to update the weights until the entire data has been seen.
+
+There are more Gradient Descent algorithms other than the ones listed here. Like AdaGrad, SGD+Momentum, RMSProp, Adam etc. But don't worry about them for now.
   Resource:
 
 -  [Gradient descent, how neural networks learn | Deep learning, chapter 2](https://www.youtube.com/watch?v=IHZwWFHWa-w&t=2s)
@@ -43,7 +50,10 @@
 -  [In softmax classifier, why use exp function to do normalization?](https://datascience.stackexchange.com/questions/23159/in-softmax-classifier-why-use-exp-function-to-do-normalization)
 
 **Q8: Why do we need activation function?**
+Answered by @Clement:
+>Hi, the purpose of an activation is to introduce non-linearity into the neural network. Essentially, when we are first building Neural Networks, the formula where,
 
+`y = w1x1 + w2x2 + b` is a linear function, this means that it can only linearly separate data points using a line. Adding the non-linearity i.e. activation function allows the model to form different boundary instead of it just being a line.
   Resource:
   
 -  [Activation functions and it’s types-Which is better?](https://towardsdatascience.com/activation-functions-and-its-types-which-is-better-a9a5310cc8f)
