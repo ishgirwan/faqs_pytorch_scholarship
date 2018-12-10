@@ -1,5 +1,21 @@
 # Recurrent Neural Networks
 
+**Q: I found this lesson difficult to understand.  What additional resources are recommended?**
+
+- At the beginning of the lesson Luis Serrano suggests these resources:
+  
+  Understanding LSTM Networks blogpost from [Chris Olah]( http://colah.github.io/posts/2015-08-Understanding-LSTMs/)
+  
+  Exporing LSTMs blogpost from [Edwin Chen]( http://blog.echen.me/2017/05/30/exploring-lstms/)
+  
+  The  Unreasonable  Effectiveness  of  Recurrent  Neural  Networks  blogpost from [Andrej Karpathy]( http://karpathy.github.io/2015/05/21/rnn-effectiveness/)
+  
+  Lecture on RNNs and LSTMs from Stanford University’s CS231by [Andrej Karpathy]( https://www.youtube.com/watch?v=iX5V1WpxxkY)
+
+- From @Vlad:
+
+[LSTMs from Richard Socher and Stanford NLP]( https://youtu.be/QuELiw8tbx8) for mathematical but clean explanations.
+
 **Q: Please explain the significance of n_hidden in `nn.LSTM(input_size, n_hidden, n_layers, dropout=drop_prob, batch_first=True)`**
 - Answered by @José Fernández Portal:
 
