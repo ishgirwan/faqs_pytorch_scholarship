@@ -1,4 +1,4 @@
-# Diiferent inquiries surrounding the course
+# Different inquiries surrounding the course
 
 **Q1: When we have an announcement, it shows a `1` written aside the channel name. But I, for some announcements, don't see that. So, I miss some announcements when they are posted.**
 -   Slack workspace is being picky with regards to those notifications! To make sure you don't miss any, I would periodically check our [PyTorch Challenge site](https://sites.google.com/udacity.com/pytorch-scholarship-facebook/announcements)
