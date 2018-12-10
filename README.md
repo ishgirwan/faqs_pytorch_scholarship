@@ -9,7 +9,7 @@ We would love to have contributions from you and welcome all your suggestions to
 
 # Content
 
-[About the course](Aboutthecourse.md)
+[About the course](About_the_course.md)
 
 [Lesson 2](lesson2.md)
 
