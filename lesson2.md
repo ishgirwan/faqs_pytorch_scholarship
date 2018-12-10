@@ -39,6 +39,7 @@ Stochastic Gradient Descent loads 1 training example at one go and update the we
 Lastly, Mini-Batch Gradient Descent is a combination of the two. Mini-Batch Gradient descent instead of taking the entire dataset takes in N batch size. Where N is the number of training examples you can choose. These N training examples are loaded into the network and are used to update the weights once. And subsequent N batches will continue to update the weights until the entire data has been seen.
 
 There are more Gradient Descent algorithms other than the ones listed here. Like AdaGrad, SGD+Momentum, RMSProp, Adam etc. But don't worry about them for now.
+
   Resource:
 
 -  [Gradient descent, how neural networks learn | Deep learning, chapter 2](https://www.youtube.com/watch?v=IHZwWFHWa-w&t=2s)
@@ -51,15 +52,14 @@ There are more Gradient Descent algorithms other than the ones listed here. Like
 
 **Q8: Why do we need activation function?**
 Answered by @Clement:
->Hi, the purpose of an activation is to introduce non-linearity into the neural network. Essentially, when we are first building Neural Networks, the formula where,
-
-`y = w1x1 + w2x2 + b` is a linear function, this means that it can only linearly separate data points using a line. Adding the non-linearity i.e. activation function allows the model to form different boundary instead of it just being a line.
+>Hi, the purpose of an activation is to introduce non-linearity into the neural network. Essentially, when we are first building Neural Networks, the formula where, y = w1x1 + w2x2 + b is a linear function, this means that it can only linearly separate data points using a line. Adding the non-linearity i.e. activation function allows the model to form different boundary instead of it just being a line.
+  
   Resource:
   
 -  [Activation functions and it’s types-Which is better?](https://towardsdatascience.com/activation-functions-and-its-types-which-is-better-a9a5310cc8f)
 
 **Q9: What's the difference between np.dot(), np.matmul(),* for matrix multilication and when to use them?**
-- Resource: [numpy.dot vs numpy.matmul](https://stackoverflow.com/questions/34142485/difference-between-numpy-dot-and-python-3-5-matrix-multiplication)
+  Resource: [numpy.dot vs numpy.matmul](https://stackoverflow.com/questions/34142485/difference-between-numpy-dot-and-python-3-5-matrix-multiplication)
 
 **Q10: Having a problem with gradient descent ?**
 - Here is a [tutorial](https://github.com/bhargitay/Facebook-Pytorch-Challenge-Notes/blob/master/Gradient%20Descent/Gradient_Descent.ipynb) on Gradient Descent with numpy (using the notebook provided by Udacity). *Created by @Beata.*
