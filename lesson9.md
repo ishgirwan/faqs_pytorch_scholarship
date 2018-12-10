@@ -13,3 +13,10 @@ A:  Video 4 includes an explanation of Torch Script, which is an intermediate re
 
 A: Click on the Upload button in the Workspace section of the lab. You can upload your file there, and then access it by name in the `Test 
 Score.ipynb` file using: `torch.load('checkpoint.pt', map_location = "cpu")`
+
+### Q4:  How running libtorch on Xcode C++?
+If you have issues: please see if the discussion at the link below helps you solve your issue.
+https://github.com/pytorch/pytorch/issues/14165
+
+About instalation:
+https://pytorch.org/cppdocs/installing.html
