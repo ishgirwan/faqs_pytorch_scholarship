@@ -32,13 +32,8 @@
 
 **Q6: What is Gradient Descent?**
 Answered by @Clement:
->Batch Gradient Descent also just known as Gradient Descent usually loads in the entire training examples (dataset) into the network at one go and update the weights based on all the training examples.
+>Batch Gradient Descent also just known as Gradient Descent usually loads in the entire training examples (dataset) into the network at one go and update the weights based on all the training examples. Stochastic Gradient Descent loads 1 training example at one go and update the weights using only that training example. Lastly, Mini-Batch Gradient Descent is a combination of the two. Mini-Batch Gradient descent instead of taking the entire dataset takes in N batch size. Where N is the number of training examples you can choose. These N training examples are loaded into the network and are used to update the weights once. And subsequent N batches will continue to update the weights until the entire data has been seen.
 
-Stochastic Gradient Descent loads 1 training example at one go and update the weights using only that training example.
-
-Lastly, Mini-Batch Gradient Descent is a combination of the two. Mini-Batch Gradient descent instead of taking the entire dataset takes in N batch size. Where N is the number of training examples you can choose. These N training examples are loaded into the network and are used to update the weights once. And subsequent N batches will continue to update the weights until the entire data has been seen.
-
-There are more Gradient Descent algorithms other than the ones listed here. Like AdaGrad, SGD+Momentum, RMSProp, Adam etc. But don't worry about them for now.
 
   Resource:
 
