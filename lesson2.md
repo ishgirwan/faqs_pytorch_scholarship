@@ -60,3 +60,8 @@ Answered by @Clement:
 
 **Q10: Having a problem with gradient descent ?**
 - Here is a [tutorial](https://github.com/bhargitay/Facebook-Pytorch-Challenge-Notes/blob/master/Gradient%20Descent/Gradient_Descent.ipynb) on Gradient Descent with numpy (using the notebook provided by Udacity). *Created by @Beata.*
+
+
+**Q10: Are there any notes for these lessons?**
+
+There are notes created by our fellow scholars. You can refer to these notes through [this spreadsheet](https://docs.google.com/spreadsheets/d/1b7eD6dgWXgFuFpbWHImC5lovWLBfPR_zgaedBRA_21s/edit?usp=sharing) created and maintained by @DylanGoh.
