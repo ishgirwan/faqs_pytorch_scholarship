@@ -65,3 +65,34 @@ Answered by @Clement:
 **Q11: Are there any notes for these lessons?**
 
 There are notes created by our fellow scholars. You can refer to these notes through [this spreadsheet](https://docs.google.com/spreadsheets/d/1b7eD6dgWXgFuFpbWHImC5lovWLBfPR_zgaedBRA_21s/edit?usp=sharing) created and maintained by @DylanGoh.
+
+**Q12: For the second example, where the line is described by 3x1+ 4x2 - 10 = 0, if the learning rate was set to 0.1, how many times would you have to apply the perceptron trick to move the line to a position where the blue point, at (1, 1), is correctly classified?**
+
+-you need to apply the perceptron trick to shift it in the positive area, and count how many steps it will take,
+
+1st step:
+
+3(1) + 4(1) - 10 = 0
+
+3 + 0.1 = 3.1
+
+4 + 0.1 = 4.1
+
+-10 + 0.1 = 9.9
+
+then:
+
+3.1 + 4.1 - 9.9 = -2.7, it's still negative so apply the trick again
+
+2nd step:
+
+3.1 + 0.1 = 3.2
+
+4.1 + 0.1 = 4.2
+
+-9.9 + 0.1 = 9.8
+
+3.2 + 4.2 - 9.8 = -2.4,  it's still negative so apply the trick again
+
+repeat the trick until it is equal or greater than 0 and count how many steps you did
+
