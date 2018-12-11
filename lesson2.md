@@ -68,6 +68,8 @@ There are notes created by our fellow scholars. You can refer to these notes thr
 
 **Q12: For the second example, where the line is described by 3x1+ 4x2 - 10 = 0, if the learning rate was set to 0.1, how many times would you have to apply the perceptron trick to move the line to a position where the blue point, at (1, 1), is correctly classified?**
 
+Answered by: @Carlo David
+
 -you need to apply the perceptron trick to shift it in the positive area, and count how many steps it will take,
 
 1st step:
@@ -96,3 +98,10 @@ then:
 
 repeat the trick until it is equal or greater than 0 and count how many steps you did
 
+**Q13: what is the functionality of dropout and how it prevents overfitting? please help me to understand the intuition of using dropout.**
+
+Answered by: @Carlo David
+- Imagine a scenario, in a classroom, a teacher asks some questions but always same two students are answering, now, the teacher asks them to stay quiet for some time and let other students participate. This way other students get to learn better. Maybe they answer wrong, but the teacher can correct them(update weights). This way the whole class(layer) learn about a topic better
+
+
+- to put it loosely, dropout randomly select neurons to ignore during training, because the neurons aren't always present during training, the layer learns to use all of its inputs, improving generalization
