@@ -55,7 +55,7 @@ Answered by @Clement:
   
 -  [Activation functions and it’s types-Which is better?](https://towardsdatascience.com/activation-functions-and-its-types-which-is-better-a9a5310cc8f)
 
-**Q9: What's the difference between np.dot(), np.matmul(),* for matrix multilication and when to use them?**
+**Q9: What's the difference between np.dot() and np.matmul(),for matrix multilication and when to use them?**
   Resource: [numpy.dot vs numpy.matmul](https://stackoverflow.com/questions/34142485/difference-between-numpy-dot-and-python-3-5-matrix-multiplication)
 
 **Q10: Having a problem with gradient descent ?**
@@ -104,7 +104,7 @@ Answered by: @Carlo David
 - Imagine a scenario, in a classroom, a teacher asks some questions but always same two students are answering, now, the teacher asks them to stay quiet for some time and let other students participate. This way other students get to learn better. Maybe they answer wrong, but the teacher can correct them(update weights). This way the whole class(layer) learn about a topic better
 
 
-- to put it loosely, dropout randomly select neurons to ignore during training, because the neurons aren't always present during training, the layer learns to use all of its inputs, improving generalization
+- To put it loosely, dropout randomly select neurons to ignore during training, because the neurons aren't always present during training, the layer learns to use all of its inputs, improving generalization
 
 
 **Q14: Why is that we can’t use values such as *0, 1* and *2* for classifying the animal as Duck, Walrus or Beaver?
