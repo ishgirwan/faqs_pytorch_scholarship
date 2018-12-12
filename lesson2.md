@@ -105,3 +105,10 @@ Answered by: @Carlo David
 
 
 - to put it loosely, dropout randomly select neurons to ignore during training, because the neurons aren't always present during training, the layer learns to use all of its inputs, improving generalization
+
+
+**Q14: Why is that we can’t use values such as *0, 1* and *2* for classifying the animal as Duck, Walrus or Beaver?
+Why does this assume *dependencies* between classes?**
+
+Answered by: @Carlo David
+- We can't say 0 = Duck, 1 = Walrus, 2 = Beaver, because our model think that a high number is better than a lower number, its like telling the model Beaver is better than Walrus, and Walrus is better than Duck. So we want to avoid that, instead we perform one hot encoding. It tries to avoid the natural ordered relationships, because our model will naturally give the higher numbers with higher weights.
