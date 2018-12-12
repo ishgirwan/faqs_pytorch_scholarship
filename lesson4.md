@@ -77,3 +77,7 @@ If you want to know more about tensors, you could also refer to slides or handou
  Most ML Libraries require Nvidia GPU with Compute Capability 3.0 or higher. Same is for PyTorch. GoTo following link and take a look at your GPU Model Number under category, if the compute capability is less than 3.0 then you can't run on GPU. 
     Link :  https://developer.nvidia.com/cuda-gpus
     But if you want you can build PyTorch from source if you really want to run on an old GPU: https://discuss.pytorch.org/t/pytorch-version-for-cuda-compute-capability-3-0-gtx-780m/15889 . But this will not give you a high speedup due to less CUDA Cores and memory bandwidth of those old GPUs
+    
+**Q13: Hello, can someone explain to me what is "batch" size?**
+
+- it is the number of samples that going to be propagated through the network. For instance, let’s say you have 1000 training samples and you want to set up batch_size equal to 100. Algorithm takes first 100 samples (from 1st to 100th) from the training dataset and trains network. Next it takes second 100 samples (from 101st to 200th) and train network again. We can keep doing this procedure until we will propagate through the networks all samples,
