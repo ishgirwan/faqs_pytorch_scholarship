@@ -43,3 +43,10 @@ Tokenized review:
 IOPut data rate exceeded.
 
  A: You're trying to print too many items and jupyter notebook. Might be something wrong with your `reviews_ints`.
+ 
+  ### Q8 How to decide seq_length during padding and truncating: In lesson 8.10?
+
+ A: In the notebook "Sentiment_RNN_Exercise" Cezanne mentions that the maximum review length  was about 2500 words and that's going to be too many steps for our RNN.
+Then it's necessary to truncate this data to a reasonable size and number of steps.
+Cezanne mentions that a good sequence length to be around 200.
+I think we should look at each situation. For this case the size of 200 looked good. In other cases an analysis should be done.
