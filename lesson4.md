@@ -81,3 +81,16 @@ If you want to know more about tensors, you could also refer to slides or handou
 **Q13: Hello, can someone explain to me what is "batch" size?**
 
 - it is the number of samples that going to be propagated through the network. For instance, let’s say you have 1000 training samples and you want to set up batch_size equal to 100. Algorithm takes first 100 samples (from 1st to 100th) from the training dataset and trains network. Next it takes second 100 samples (from 101st to 200th) and train network again. We can keep doing this procedure until we will propagate through the networks all samples,
+
+**Q14: After definig my classifier for transfer learning i got error when i ran the training loop 'loss.backward()' - (RuntimeError: element 0 of tensors does not require grad and does not have a grad_fn)** 
+
+ - First make sure you attached the classifer after freezing the parameters of pretrained model, so that your classifier didn't got freezed as well.
+   Second your optimizer should be something like this 
+              
+              optimizer = optim.SGD(model.classifier.parameters(), lr=0.01)
+              
+   Third problem might be that the model you are using doesn't had any classifier layer, for example resnet model have the linear layer named 'fc' in that case you need to first take a look at the layer name, then attach the classifier to that layer, so for example in case of 'fc' you should attach the classifier and define optimizer as: 
+            
+            model.fc=classifier
+            optimizer = optim.SGD(model.fc.parameters(), lr=0.01)
+            
