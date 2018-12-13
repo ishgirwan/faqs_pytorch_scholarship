@@ -9,7 +9,6 @@
 
 - Applying the following methods can also help in achieving a decent validation loss:
   
-  - Using a single fully connected layer as your classifier.
   - Trying different learning rate schedulers as mentioned in the [PyTorch docs](https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate).
   - Once the network is trained, try unfreezing the weights of the complete network, then train it further for some more epochs at a very
   low learning rate.
