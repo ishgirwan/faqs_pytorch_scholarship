@@ -93,4 +93,28 @@ If you want to know more about tensors, you could also refer to slides or handou
             
             model.fc=classifier
             optimizer = optim.SGD(model.fc.parameters(), lr=0.01)
-            
+ 
+ **Q15:transform = transforms.Compose([transforms.ToTensor(),
+                               transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])
+Why do we need it, and what it do?**
+
+answer by: @Carlo David
+
+transforms are image transformations and helps us preprocess our data. They can be chained together using Compose()
+
+using the value 0.5 will transform it in the range of (-1,1) which helps the model learn faster, If you don't normalize your inputs between (0,1) or (-1,1) you could not equally distribute importance of each input,  thus naturally  large values become dominant according to less values during neural network training,
+
+transforms.Normalize(mean, std)
+
+mean=(0.5, 0.5, 0.5), std=(0.5, 0.5, 0.5), we have 3 values since its RGB
+
+since we used transforms.ToTensor() it will convert our input data from 0-255 to 0-1 range
+
+we normalize it using the formula: `input = (input - mean) / std`
+
+minimum value for input which is 0 will be converted to  (0-0.5)/0.5=-1
+
+maximum value for input which is 1 will be converted to (1-0.5)/0.5=1
+
+
+
