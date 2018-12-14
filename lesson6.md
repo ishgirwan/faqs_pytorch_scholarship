@@ -11,3 +11,6 @@ Answered by @shangeth:
 >tensor.detach() creates a tensor that shares storage with tensor that does not require grad. 
 tensor.clone() creates a copy of tensor that imitates the original tensor's requires_grad field.
 You should use detach() when attempting to remove a tensor from a computation graph, and clone() as a way to copy the tensor while still keeping the copy as a part of the computation graph it came from.
+
+**Q3: Whats the point of style transfer in relation to image classification ?**
+-   Style transfer is another method other than classification. You get a stylistic ai- designed image with style transfer  whereas you can predict which class a photo belongs to with classification. Use case for style transfer could be for aesthetics reasons.
