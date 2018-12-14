@@ -45,3 +45,6 @@
 
 **Q15: How is the analysis of Slack Activity done?**
 -    I'm afraid like any brick and mortar learning institution there are some things that we do not share. Outside of revealing the selection criteria for Phase 2, we won't be sharing more details.
+
+**Q16: On Mac if you're facing a small problem, despite installing Pandas, when I run the program on Jupiter Notebook, it shows an error as "No module Found : Pandas".**
+-   If you install pandas to a sprecific conda environment but not jupyter. When you run `jupyter notebook` command it tends to open default environment. Just make sure to activate that environment.
