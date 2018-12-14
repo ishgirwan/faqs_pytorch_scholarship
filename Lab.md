@@ -5,6 +5,8 @@
 
 - Super fast method to upload your checkpoint in Udacity's workspace create by @avinashss: [How to move our model from Google Colab to Udacity’s Workspace (final lab project)](https://medium.com/@ml_kid/how-to-move-our-model-from-google-colab-to-udacitys-workspace-final-lab-project-88e1a0b7d6ab)
 
+- Colab notebook which shows the application of transforms, created by @ecdrid : [How transforms work](https://colab.research.google.com/drive/1iDwVOoVBkuljUadRSCChs33iNtbrI6Wv). 
+
 - You can also refer to the medium article published by José Nieto who is a Content Developer at Udacity: [Implementing an Image Classifier with PyTorch](https://medium.com/udacity/implementing-an-image-classifier-with-pytorch-part-1-cf5444b8e9c9). 
 
 - Applying the following methods can also help in achieving a decent validation loss:
