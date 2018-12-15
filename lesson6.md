@@ -14,3 +14,8 @@ You should use detach() when attempting to remove a tensor from a computation gr
 
 **Q3: Whats the point of style transfer in relation to image classification ?**
 -   Style transfer is another method other than classification. You get a stylistic ai- designed image with style transfer  whereas you can predict which class a photo belongs to with classification. Use case for style transfer could be for aesthetics reasons.
+
+**Q4: If you are facing this error ```AttributeError: module 'PIL.Image' has no attribute 'register_extensions'```?**
+-   Make sure to insall pillow, you can use this command ```!pip3 install Pillow==4.1.1```.
+
+
