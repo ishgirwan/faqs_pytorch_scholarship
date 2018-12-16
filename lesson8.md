@@ -44,7 +44,8 @@ You should also notice that, in the training loop, we are making sure that our o
  ### Q5: Why does the following error occur?
 RuntimeError: Expected tensor for argument #1 'indices' to have scalar type Long; but got CPUIntTensor insted (while checking for embedding).
 
- A: Verifing question! Still no answer.
+ A: Check this out. See more explanations on the link below:
+ https://pytorchfbchallenge.slack.com/messages/CDB3N8Q7J/convo/CE39Z196J-1544794090.207600/
  
  ### Q6: In the first notebook of lesson 8, it seems that we are removing punctuations in order to process stuff like periods and commas, but I can help and wonder whether exclamation and questions marks could be useful to indicate whether the review is useful. For example, consider something like 'this movie was sick!!'
  
@@ -98,3 +99,12 @@ h_n is the hidden state and c_n is the cell state
  A: Verify len(label_list). 
     You probably ended up with a one-element list there, maybe even a one-row matrix.
 
+ ### Q17 what is the significance of particular embedding size?
+ A: Explanation by @Rusty:
+Before we discuss about what embedding layer is, let's recall first what one-hot encoding is. We use `one-hot encoding` for our labels when working with models that have more than 2 outputs. In our dataset, we have around `70000+ words`. Representing a word with a vector with size 70000 would be `computationally and memory inefficient` for us.
+
+So we need to find a way to represent each word without using one-hot encoding. Google introduced the idea of using smaller-sized vectors to represent a word, which is now what we call `Word Embedding`. The embedding size is the size of the vector representing each word.
+
+ ### Q18 How does the size of the embedding vector matter I mean does taking size of bigger length indicate any relevance?
+ A: Explanation by @Rusty:
+Bigger embedding size should result to more distinct representation of each word. Kinda like how more numbers can be represented by using more bits.
