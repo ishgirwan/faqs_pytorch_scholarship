@@ -98,15 +98,15 @@ If you want to know more about tensors, you could also refer to slides or handou
                                transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])
 Why do we need it, and what it do?**
 
-answer by: @Carlo David
+Answer by: @Carlo David
 
-transforms are image transformations and helps us preprocess our data. They can be chained together using Compose()
+Transforms are image transformations and helps us preprocess our data. They can be chained together using Compose().
 
-using the value 0.5 will transform it in the range of (-1,1) which helps the model learn faster, If you don't normalize your inputs between (0,1) or (-1,1) you could not equally distribute importance of each input,  thus naturally  large values become dominant according to less values during neural network training,
+Using the value 0.5 will transform it in the range of (-1,1) which helps the model learn faster, If you don't normalize your inputs between (0,1) or (-1,1) you could not equally distribute importance of each input,  thus naturally  large values become dominant according to less values during neural network training,
 
 transforms.Normalize(mean, std)
 
-mean=(0.5, 0.5, 0.5), std=(0.5, 0.5, 0.5), we have 3 values since its RGB
+mean=(0.5, 0.5, 0.5), std=(0.5, 0.5, 0.5), we have 3 values since its RGB 
 
 since we used transforms.ToTensor() it will convert our input data from 0-255 to 0-1 range
 
