@@ -113,7 +113,7 @@ Answered by: @Carlo David
 
 **Q15: When and why is One-Hot-Encoding used?**
 
-_-Quick answer:_ 
+_-Quick answer: @Nicolas Remerscheid_ 
 * Used for **multi-class-classification (non-linear)**. 
 * _Background:_ A multic-class-classifier can be viewed as the combination of seperate single classifiers: [One-Vs-All](https://utkuufuk.github.io/2018/06/03/one-vs-all-classification/) 
 * So essentially the error function of a multi-class-classifier can be viewed as the sum of the errors of all the separate classifiers; or: _the error of **each** data-example from **each** classifier_. 
