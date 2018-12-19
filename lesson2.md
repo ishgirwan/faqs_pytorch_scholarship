@@ -1,4 +1,4 @@
-﻿# Introduction to Neural Networks
+# Introduction to Neural Networks
 
 **Q1: I am having some trouble understanding backpropagation when training the neural net.**
 
@@ -41,8 +41,6 @@ Answered by @Clement:
 -  [Gradient descent, how neural networks learn | Deep learning, chapter 2](https://www.youtube.com/watch?v=IHZwWFHWa-w&t=2s)
 
 **Q7: In softmax function why do we take exponential?**
-
-  Resource:
 
 -  [In softmax classifier, why use exp function to do normalization?](https://datascience.stackexchange.com/questions/23159/in-softmax-classifier-why-use-exp-function-to-do-normalization)
 
@@ -112,3 +110,19 @@ Why does this assume *dependencies* between classes?**
 
 Answered by: @Carlo David
 - We can't say 0 = Duck, 1 = Walrus, 2 = Beaver, because our model think that a high number is better than a lower number, its like telling the model Beaver is better than Walrus, and Walrus is better than Duck. So we want to avoid that, instead we perform one hot encoding. It tries to avoid the natural ordered relationships, because our model will naturally give the higher numbers with higher weights.
+
+**Q15: When and why is One-Hot-Encoding used?**
+
+_-Quick answer:_ 
+* Used for **multi-class-classification (non-linear)**. 
+* _Background:_ A multic-class-classifier can be viewed as the combination of seperate single classifiers: [One-Vs-All](https://utkuufuk.github.io/2018/06/03/one-vs-all-classification/) 
+* So essentially the error function of a multi-class-classifier can be viewed as the sum of the errors of all the separate classifiers; or: _the error of **each** data-example from **each** classifier_. 
+* _What is needed?:_ The error is always determined by the difference to a correct given value! That means one needs a given true output for each data point _for each classifier_ 
+* _What is given?:_  In the given data-set there is only **one** correct true value for each data-example/point which is equal to: _ the number of the correct class_ 
+* _What is the solution?:_ The one value indicating the correct class by a number from: _[1 - #classes]_ has to be transformed from a scalar to a vector which has one entry for each classifier and either says _0 (not correct class) or 1 (correct class)_. 
+
+--> **I.e.:** if y1 = 3 and there would be 5 different possible classes it has to be converted to y1 = [0, 0, 1, 0, 0];
+
+_-Additional_ Ressources: 
+
+-https://towardsdatascience.com/smarter-ways-to-encode-categorical-data-for-machine-learning-part-1-of-3-6dca2f71b159
