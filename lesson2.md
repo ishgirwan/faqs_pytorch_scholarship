@@ -102,7 +102,7 @@ then:
 
 repeat the trick until it is equal or greater than 0 and count how many steps you did
 
-**Q13: what is the functionality of dropout and how it prevents overfitting? please help me to understand the intuition of using dropout.**
+**Q14: what is the functionality of dropout and how it prevents overfitting? please help me to understand the intuition of using dropout.**
 
 Answered by: @Carlo David
 - Imagine a scenario, in a classroom, a teacher asks some questions but always same two students are answering, now, the teacher asks them to stay quiet for some time and let other students participate. This way other students get to learn better. Maybe they answer wrong, but the teacher can correct them(update weights). This way the whole class(layer) learn about a topic better
@@ -111,13 +111,13 @@ Answered by: @Carlo David
 - To put it loosely, dropout randomly select neurons to ignore during training, because the neurons aren't always present during training, the layer learns to use all of its inputs, improving generalization
 
 
-**Q14: Why is that we can’t use values such as *0, 1* and *2* for classifying the animal as Duck, Walrus or Beaver?
+**Q15: Why is that we can’t use values such as *0, 1* and *2* for classifying the animal as Duck, Walrus or Beaver?
 Why does this assume *dependencies* between classes?**
 
 Answered by: @Carlo David
 - We can't say 0 = Duck, 1 = Walrus, 2 = Beaver, because our model think that a high number is better than a lower number, its like telling the model Beaver is better than Walrus, and Walrus is better than Duck. So we want to avoid that, instead we perform one hot encoding. It tries to avoid the natural ordered relationships, because our model will naturally give the higher numbers with higher weights.
 
-**Q15: When and why is One-Hot-Encoding used?**
+**Q16: When and why is One-Hot-Encoding used?**
 
 _-Quick answer: @Nicolas Remerscheid_ 
 * Used for **multi-class-classification (non-linear)**. 
