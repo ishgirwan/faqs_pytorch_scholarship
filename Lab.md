@@ -135,3 +135,17 @@ Now you can just connect your drive and start training further if you wish.
 
 **Q21: Even with GPU, my model is taking more than 3 hours to train. Did anyone's model take longer?**
 - It depends on the GPU being used and yes, this lab is a relatively computationally expensive problem in the first place. You can also check this [page](https://datascience.stackexchange.com/questions/26209/why-is-training-take-so-long-on-my-gpu) for some info.
+
+
+**Q22:  Anyone encountered this error when running the assessment code for the final challenge?
+```RuntimeError: cuda runtime error (35) : CUDA driver version is insufficient for CUDA runtime version at torch/csrc/cuda/Module.cpp:51```**
+
+answer by @Clement
+- This happens because the checkpoint file you saved contains parameters that was on the GPU. Udacity workspace does not allow the usage of GPU!
+
+  To resolve this issue: In the torch.load function add an additional parameter, map_location=“cpu”.
+
+  In other words,
+
+  torch.load(“filepath”, map_location=“cpu”) 
+
