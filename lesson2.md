@@ -22,6 +22,7 @@
   Resource:
 
 -   [Understanding binary cross-entropy / log loss: a visual explanation](https://towardsdatascience.com/understanding-binary-cross-entropy-log-loss-a-visual-explanation-a3ac6025181a)
+-   [Cross - entropy notes from #math-help](https://drive.google.com/file/d/1zCPZ1cnwaqVYzEL54WFcc7J34IZDYSRf/view)
 
 **Q5: What is bias?**
 
@@ -39,12 +40,17 @@ Answered by @Clement:
   Resource:
 
 -  [Gradient descent, how neural networks learn | Deep learning, chapter 2](https://www.youtube.com/watch?v=IHZwWFHWa-w&t=2s)
+-  [Gradient descent notes from #math-help](https://drive.google.com/file/d/1_vcTdWl-JPkR282En1umVvyFiICac_Ti/view)
 
 **Q7: In softmax function why do we take exponential?**
 
 -  [In softmax classifier, why use exp function to do normalization?](https://datascience.stackexchange.com/questions/23159/in-softmax-classifier-why-use-exp-function-to-do-normalization)
 
-**Q8: Why do we need activation function?**
+**Q8: How to calculate derivative of sigmoid function?**
+
+-  [Calculating derivative of sigmoid function](https://drive.google.com/file/d/18JAQsH285lWkXTlvxaPNYiTdjtUC1NI6/view)
+
+**Q9: Why do we need activation function?**
 
 Answered by @Clement:
 >Hi, the purpose of an activation is to introduce non-linearity into the neural network. Essentially, when we are first building Neural Networks, the formula where, y = w1x1 + w2x2 + b is a linear function, this means that it can only linearly separate data points using a line. Adding the non-linearity i.e. activation function allows the model to form different boundary instead of it just being a line.
@@ -53,18 +59,18 @@ Answered by @Clement:
   
 -  [Activation functions and it’s types-Which is better?](https://towardsdatascience.com/activation-functions-and-its-types-which-is-better-a9a5310cc8f)
 
-**Q9: What's the difference between np.dot() and np.matmul(),for matrix multilication and when to use them?**
+**Q10: What's the difference between np.dot() and np.matmul(),for matrix multilication and when to use them?**
   Resource: [numpy.dot vs numpy.matmul](https://stackoverflow.com/questions/34142485/difference-between-numpy-dot-and-python-3-5-matrix-multiplication)
 
-**Q10: Having a problem with gradient descent ?**
+**Q11: Having a problem with gradient descent ?**
 - Here is a [tutorial](https://github.com/bhargitay/Facebook-Pytorch-Challenge-Notes/blob/master/Gradient%20Descent/Gradient_Descent.ipynb) on Gradient Descent with numpy (using the notebook provided by Udacity). *Created by @Beata.*
 
 
-**Q11: Are there any notes for these lessons?**
+**Q12: Are there any notes for these lessons?**
 
 There are notes created by our fellow scholars. You can refer to these notes through [this spreadsheet](https://docs.google.com/spreadsheets/d/1b7eD6dgWXgFuFpbWHImC5lovWLBfPR_zgaedBRA_21s/edit?usp=sharing) created and maintained by @DylanGoh.
 
-**Q12: For the second example, where the line is described by 3x1+ 4x2 - 10 = 0, if the learning rate was set to 0.1, how many times would you have to apply the perceptron trick to move the line to a position where the blue point, at (1, 1), is correctly classified?**
+**Q13: For the second example, where the line is described by 3x1+ 4x2 - 10 = 0, if the learning rate was set to 0.1, how many times would you have to apply the perceptron trick to move the line to a position where the blue point, at (1, 1), is correctly classified?**
 
 Answered by: @Carlo David
 
@@ -96,7 +102,7 @@ then:
 
 repeat the trick until it is equal or greater than 0 and count how many steps you did
 
-**Q13: what is the functionality of dropout and how it prevents overfitting? please help me to understand the intuition of using dropout.**
+**Q14: what is the functionality of dropout and how it prevents overfitting? please help me to understand the intuition of using dropout.**
 
 Answered by: @Carlo David
 - Imagine a scenario, in a classroom, a teacher asks some questions but always same two students are answering, now, the teacher asks them to stay quiet for some time and let other students participate. This way other students get to learn better. Maybe they answer wrong, but the teacher can correct them(update weights). This way the whole class(layer) learn about a topic better
@@ -105,13 +111,13 @@ Answered by: @Carlo David
 - To put it loosely, dropout randomly select neurons to ignore during training, because the neurons aren't always present during training, the layer learns to use all of its inputs, improving generalization
 
 
-**Q14: Why is that we can’t use values such as *0, 1* and *2* for classifying the animal as Duck, Walrus or Beaver?
+**Q15: Why is that we can’t use values such as *0, 1* and *2* for classifying the animal as Duck, Walrus or Beaver?
 Why does this assume *dependencies* between classes?**
 
 Answered by: @Carlo David
 - We can't say 0 = Duck, 1 = Walrus, 2 = Beaver, because our model think that a high number is better than a lower number, its like telling the model Beaver is better than Walrus, and Walrus is better than Duck. So we want to avoid that, instead we perform one hot encoding. It tries to avoid the natural ordered relationships, because our model will naturally give the higher numbers with higher weights.
 
-**Q15: When and why is One-Hot-Encoding used?**
+**Q16: When and why is One-Hot-Encoding used?**
 
 _-Quick answer: @Nicolas Remerscheid_ 
 * Used for **multi-class-classification (non-linear)**. 
