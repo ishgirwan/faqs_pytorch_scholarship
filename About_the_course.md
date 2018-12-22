@@ -1,5 +1,11 @@
 # Few details about the course contents and upcoming activities
 
+**USEFUL LINKS**
+-- Implementing an Image Classifier with PyTorch by Jose Nieto(an 'AI with Python ND' graduate)
+Part 1 - [Why and how to use a pre-trained network](https://medium.com/udacity/implementing-an-image-classifier-with-pytorch-part-1-cf5444b8e9c9) 
+Part 2 - [Training process](https://medium.com/udacity/implementing-an-image-classifier-with-pytorch-part-2-ae4dd7b2f48) 
+Part 3 - [Learn how to use our neural network to predict the type in new images](https://medium.com/udacity/implementing-an-image-classifier-with-pytorch-part-3-6ff66106ba89) 
+
 **Q1: Are there any colab projects for the challenge in near future?**
 -   There will be an opportunity for collaboration in our project showcase that will happen towards the end of Phase 1. In the meantime, you can colab on ideas to enrich this community whether that be host an AMA, a live webinar - pitch us your best ideas!
 
