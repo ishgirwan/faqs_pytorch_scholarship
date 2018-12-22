@@ -1,6 +1,6 @@
 # Lab challenge
 
-**Udacity PyTorch Final Lab Guide**
+**Udacity PyTorch Final Lab Guides**
 - https://www.kaggle.com/soumya044/udacity-pytorch-final-lab-guide-part-1 by @Wizard.IND
 - https://www.kaggle.com/soumya044/udacity-pytorch-final-lab-guide-part-2
 
