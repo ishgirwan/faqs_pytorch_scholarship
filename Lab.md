@@ -1,5 +1,11 @@
 # Lab challenge
 
+**Udacity PyTorch Final Lab Guide**
+- https://www.kaggle.com/soumya044/udacity-pytorch-final-lab-guide-part-1 by @Wizard.IND
+- https://www.kaggle.com/soumya044/udacity-pytorch-final-lab-guide-part-2
+
+-https://medium.com/@ml_kid/tips-to-help-you-get-started-with-the-final-lab-project-1e3ab1737b81 by @Avinash
+
 **Q1: What are the tips and tricks that could be helpful in the Lab challenge?**
 - This is a super useful resource created by @mhendri : [FINAL LAB CHALLENGE - Tips, Model Performance, Submission Troubleshooting, etc](https://docs.google.com/document/d/1-MCDPOejsn2hq9EoBzMpzGv9jEdtMWoIwjkAa1cVbSM/edit#heading=h.nj23sjpj5u97). For example, a simple tip is to run all the Test code in a single cell.
 
@@ -137,7 +143,7 @@ Now you can just connect your drive and start training further if you wish.
 - It depends on the GPU being used and yes, this lab is a relatively computationally expensive problem in the first place. You can also check this [page](https://datascience.stackexchange.com/questions/26209/why-is-training-take-so-long-on-my-gpu) for some info.
 
 
-**Q22:  Anyone encountered this error when running the assessment code for the final challenge?
+**Q22:  Anyone encountered this error when running the assessment code for the final challenge?**
 ```RuntimeError: cuda runtime error (35) : CUDA driver version is insufficient for CUDA runtime version at torch/csrc/cuda/Module.cpp:51```**
 
 answer by @Clement
@@ -148,4 +154,5 @@ answer by @Clement
   In other words,
 
   torch.load(“filepath”, map_location=“cpu”) 
+
 
