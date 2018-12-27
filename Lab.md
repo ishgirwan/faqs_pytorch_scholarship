@@ -72,7 +72,7 @@ i.e. `model.load_state_dict(checkpoint[‘state_dict’], strict=False)`. This i
 `num_batches_tracked`.
 
 **Q12: Is it possible to see how the test set accuracy is being calculated (not the value)? There's a lot of confusion if someone uses a non-convential way to do the assignments...**
-- Unfortunately, these details cannot be shared. 
+- Unfortunately, these details are not shared. 
 
 **Q13: How can I use ResNet given that it does not have a classifier?**
 - Put your classifier on the final layer of the model (the fully connected layer) `model.fc = classifier`
