@@ -92,7 +92,7 @@ then need a look-up from categories/folder names to labels, for example, by usin
 
 **Q15: How can I save bandwidth at the expense of drive storage when training my model using Google Colab?**
 
-- From `@ecdrid`
+- Answer by `@ecdrid`
 
 With your filename as `xyz.pth`, after some training:
 
@@ -146,13 +146,14 @@ Now you can just connect your drive and start training further if you wish.
 **Q22:  Anyone encountered this error when running the assessment code for the final challenge?**
 ```RuntimeError: cuda runtime error (35) : CUDA driver version is insufficient for CUDA runtime version at torch/csrc/cuda/Module.cpp:51```**
 
-answer by @Clement
+Answer by @Clement
 - This happens because the checkpoint file you saved contains parameters that was on the GPU. Udacity workspace does not allow the usage of GPU!
+  To resolve this issue: In the torch.load function add an additional parameter, map_location=“cpu”. In other words,
+`torch.load(“filepath”, map_location=“cpu”)` 
 
-  To resolve this issue: In the torch.load function add an additional parameter, map_location=“cpu”.
+**Q23: How to rectify this error: `element 0 of tensors does not require grad and does not have a grad_fn` ?**
 
-  In other words,
-
-  torch.load(“filepath”, map_location=“cpu”) 
+Answer by @Mohamed Shawky
+> Assign your classifier to last layer correctly, for `resnet` it's `model.fc=your_classifier` and for vgg and densenet it's `model.classifier=your_classifier`
 
 
